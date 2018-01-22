@@ -1,80 +1,113 @@
 <!doctype html>
 <html lang="fr">
 
-  <head>
-    <title>frontend-AllezCine</title>
-    <!-- META TAGS -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="assets/css/style-perso.css" type="text/css" rel="stylesheet" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Kalam:400,700|Noticia+Text:400i,700i" rel="stylesheet"> -->
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-  </head>
-  <body>
-    <!-- HEADER Slider -->
-    <header>
+<head>
+  <title>frontend-AllezCine</title>
+  <!-- META TAGS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link href="assets/css/style-perso.css" type="text/css" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Kalam:400,700|Noticia+Text:400i,700i" rel="stylesheet"> -->
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+  <!-- HEADER Slider -->
+  <header>
+    <div class="container-fluid">
       <div class="carousel slide carousel-fade" data-ride="carousel">
         <div class="container-fluid">
           <div class="row">
             <div class="logo col-md-3">
-                ALLEZ<span class="white">CINE!</span>
+              ALLEZ<span class="white">CINE!</span>
             </div>
             <div class="col-md-5">
+
               <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Genre
-                </button>
+                <button class="btn-sm nav-btn" type="button">
+                    HOME
+                  </button>
+                <button class="btn-sm nav-btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    GENRE
+                  </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                   <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
+                  <button class="dropdown-item" type="button">Comedy</button>
+                  <button class="dropdown-item" type="button">Western</button>
+                  <button type="button" class="dropdown-item">Fiction</button>
                 </div>
+                <button class="btn-sm nav-btn" type="button">
+                    FILMS
+                  </button>
+                <button class="btn-sm nav-btn" type="button">
+                    SERIES
+                  </button>
+                <button class="btn-sm nav-btn" type="button">
+                    SHOP
+                  </button>
+                <button class="btn-sm nav-btn" type="button">
+                    CONTACT
+                  </button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="container">
+                <form class="form">
+                  <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="padding-left: 20px; border-radius: 40px;" id="mysearch">
+                    <div class="input-group-addon" style="margin-left: -50px; z-index: 3; border-radius: 40px; background-color: transparent; border:none;">
+                      <button class="btn btn-warning btn-sm" type="submit" style="border-radius: 20px;" id="search-btn"><i class="fa fa-search"></i></button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li> -->
-          </ol>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li> -->
+        </ol>
         <div class="carousel-inner" role="listbox">
           <div id="headerCarousel" class="carousel-item active">
             <img class="d-block img-fluid" src="assets/img/head1.png" alt="First slide">
           </div>
-        <!-- <div id="headerCarousel" class="carousel-item">
-          <img class="d-block img-fluid" src="assets/img/head1.png" alt="Second slide">
+          <!-- <div id="headerCarousel" class="carousel-item">
+            <img class="d-block img-fluid" src="assets/img/head1.png" alt="Second slide">
+          </div>
+          <div id="headerCarousel" class="carousel-item">
+            <img class="d-block img-fluid" src="assets/img/head1.png" alt="Third slide">
+          </div>
+          <div id="headerCarousel" class="carousel-item">
+            <img class="d-block img-fluid" src="assets/img/head1.png" alt="Third slide">
+          </div> -->
         </div>
-        <div id="headerCarousel" class="carousel-item">
-          <img class="d-block img-fluid" src="assets/img/head1.png" alt="Third slide">
-        </div>
-        <div id="headerCarousel" class="carousel-item">
-          <img class="d-block img-fluid" src="assets/img/head1.png" alt="Third slide">
-        </div> -->
       </div>
     </div>
-    </header>
-    <!-- NAVBAR -->
-    <nav>
 
-    </nav>
-    <!-- Content -->
-    <section>
+  </header>
+  <!-- NAVBAR -->
+  <nav>
 
-    </section>
-    <!-- Footer  -->
-    <footer>
+  </nav>
+  <!-- Content -->
+  <section>
 
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  </body>
+  </section>
+  <!-- Footer  -->
+  <footer>
+
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
 
 </html>
