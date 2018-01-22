@@ -1,12 +1,6 @@
-* {
-  padding: 0px;
-  margin: 0px;
-}
-
 body {
   background-color: #d7d3ce;
   width: 100%;
-  max-width: 1140px;
 }
 
 #headerCarousel {
@@ -29,33 +23,40 @@ body {
   z-index: 1;
 }
 
-.container-fluid {
+header div.container-fluid {
   position: absolute;
-  color: red;
+  color: white;
   z-index: 2;
   padding: 0;
+  min-width: 1144px;
 }
 
 .logo {
   font-size: 42px;
-  margin-top: 5px;
-  margin-left: 42px;
+  margin-top: 32px;
+  text-align: center;
   font-weight: bold;
 }
 
-.white {
-  color: white;
+.red {
+  color: red;
 }
 
-.col-md-5 {
-  padding: 0px;
+.col-md-6 .nav-btn {
+  text-align: center;
 }
 
 .dropdown {
-  margin-top: 8px;
+  margin-top: 32px;
+  text-align: left;
+}
+
+.nav-btn:last-child {
+  margin-left: 60px;
 }
 
 .nav-btn {
+  margin-top: 4px;
   color: rgba(255, 65, 65, 1);
   font-size: 7px;
   font-weight: bold;
@@ -94,7 +95,7 @@ body {
 }
 
 .btn-sm {
-  padding: 3px 2px;
+  padding: 10px 1px;
 }
 
 .dropdown-item {
@@ -105,7 +106,7 @@ body {
   font-weight: bold;
 }
 
-div.dropdown-menu.show {
+.dropdown-menu.show {
   padding-right: 10px;
   border-radius: 0px;
   min-width: 118px;
@@ -113,18 +114,19 @@ div.dropdown-menu.show {
   padding-bottom: 23px;
 }
 
-.contact {
-  margin-left: 12px;
-}
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 body {
   background: #f2f2f2;
   font-family: 'Open Sans', sans-serif;
 }
+
 .btn {
-    width: 36px;
-    height: 20px;
+  width: 36px;
+  height: 20px;
+}
+
+.search-col {
+  margin-top: 32px;
 }
 
 .search {
@@ -140,34 +142,28 @@ body {
   height: 20px;
   border-radius: 5px;
   outline: none;
-  color: #9DBFAF;
+  color: white;
 }
 
-.searchTerm:focus {
-  color: #00B4CC;
+.searchTerm:focus, .searchTerm:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
 }
-.btn-warning{
-  background-color: rgba(255, 255, 255, 0.5);
+
+.btn-warning {
+  background-color: rgba(0, 0, 0, 0.3);
   border: none;
 }
+
 input[type="text"], textarea {
-
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
   border: none;
-
 }
-.searchButton {
-  position: absolute;
-  right: -50px;
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
+
+.search-btn {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-color: rgba(0, 0, 0, 0.8);
 }
 
 /*Resize the wrap to see the search bar change!*/
@@ -179,3 +175,52 @@ input[type="text"], textarea {
   left: 70%;
   transform: translate(-50%, -50%);
 }
+
+.title p {
+  margin-top: 64px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.trailer {
+  text-align: center;
+}
+
+.btn-trailer {
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0px;
+  height: 50px;
+}
+
+.carousel-indicators li {
+  margin-bottom: 40px;
+}
+
+.header-bot {
+  background-color: red;
+}
+
+.header-bot p {
+  margin: 12px;
+  margin-left: 20px;
+}
+
+.btn-login {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 12px;
+  border-radius: 0px;
+  width: auto;
+  height: auto;
+  margin-bottom: 3px;
+}
+
+main div.container-fluid {}
