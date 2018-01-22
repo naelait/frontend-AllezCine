@@ -1,3 +1,30 @@
 body {
   background-color: #d7d3ce;
+  width: 67%;
+  margin: 0 auto;
+  max-width: 850px;
+}
+#headerCarousel {
+  height: 320px;
+}
+#headerCarousel img {
+  filter: brightness(0.5);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.carousel-indicators li {
+  width : 20px;
+  height : 3px;
+}
+.carousel {
+  z-index: 1;
+}
+.container-fluid {
+  position: absolute;
+  color: red;
+  z-index: 2;
+}
+.white {
+  color: white;
 }
