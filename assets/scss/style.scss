@@ -1,0 +1,88 @@
+// .row [class^="col-"] {
+//   border: 1px solid black;
+//   border-radius: 5px;
+// }
+$fonce: #343A40;
+$moyen: #424c55;
+$blanc: #fff;
+
+body{
+  background-color: #d7d3ce;
+}
+.texte-blanc{
+  color: $blanc;
+}
+.texte-droite{
+  text-align: right;
+}
+i {
+  margin-right: 10px;
+}
+img{
+  widows: 100%;
+  height: auto;
+}
+.font-g1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.font-g2 {
+  font-family: 'Noticia Text', serif;
+  font-size: 18px;
+}
+
+.font-g3 {
+  font-family: 'Kalam', cursive;
+  font-size: 21px;
+}
+
+.head-bgc {
+  background-color: $fonce;
+}
+
+.navbar-bgc {
+  background-color: $moyen;
+}
+.nav-bgc {
+  background-color: $fonce;
+}
+
+.bgc-blanc{
+  background-color: $blanc;
+}
+.bgc-beige{
+  background-color: #f0e6da;
+}
+.jumbotron {
+  background-color: #f0e6da!important;
+}
+@mixin bgc-image($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.bgc-artisanal {
+  @include bgc-image("../img/restaurant-pave-gauche.jpg");
+}
+
+.bgc-noel {
+  @include bgc-image("../img/restaurant-pave-droite.jpg");
+}
+@mixin min-height($min-height) {
+  min-height: $min-height;
+}
+
+.min-height-pave-lg {
+  @include min-height(250px);
+}
+.min-height-pave-xs {
+  @include min-height(300px);
+}
