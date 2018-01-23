@@ -1,0 +1,8 @@
+div {
+  background-color: rgb(176, 155, 193);
+  -webkit-column-gap: 40px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px;
+  /* Firefox */
+  column-gap: 40px;
+}

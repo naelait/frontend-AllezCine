@@ -1,3 +1,226 @@
 body {
   background-color: #d7d3ce;
+  width: 100%;
 }
+
+#headerCarousel {
+  height: 480px;
+}
+
+#headerCarousel img {
+  filter: brightness(0.5);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-indicators li {
+  width: 20px;
+  height: 3px;
+}
+
+.carousel {
+  z-index: 1;
+}
+
+header div.container-fluid {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  padding: 0;
+  min-width: 1144px;
+}
+
+.logo {
+  font-size: 42px;
+  margin-top: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+}
+
+.col-md-6 .nav-btn {
+  text-align: center;
+}
+
+.dropdown {
+  margin-top: 32px;
+  text-align: left;
+}
+
+.nav-btn:last-child {
+  margin-left: 60px;
+}
+
+.nav-btn {
+  margin-top: 4px;
+  color: rgba(255, 65, 65, 1);
+  font-size: 7px;
+  font-weight: bold;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 70px;
+}
+
+.btn-secondary, .nav-btn {
+  background-color: rgba(255, 49, 60, 0);
+  border: none;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 65, 65, 1);
+  border-color: rgba(255, 65, 65, 1);
+  color: white;
+  cursor: pointer;
+}
+
+.nav-btn:focus, .nav-btn:active:focus, .nav-btn.active:focus, #dropdownMenu2 {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-secondary:hover, .show>.btn-secondary.dropdown-toggle {
+  background-color: rgba(255, 65, 65, 1);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 10px 1px;
+}
+
+.dropdown-item {
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.dropdown-menu.show {
+  padding-right: 10px;
+  border-radius: 0px;
+  min-width: 118px;
+  line-height: 18px;
+  padding-bottom: 23px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+  width: 36px;
+  height: 20px;
+}
+
+.search-col {
+  margin-top: 32px;
+}
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+}
+
+.searchTerm:focus, .searchTerm:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-warning {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+input[type="text"], textarea {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.search-btn {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Resize the wrap to see the search bar change!*/
+
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.title p {
+  margin-top: 64px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.trailer {
+  text-align: center;
+}
+
+.btn-trailer {
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0px;
+  height: 50px;
+}
+
+.carousel-indicators li {
+  margin-bottom: 40px;
+}
+
+.header-bot {
+  background-color: red;
+}
+
+.header-bot p {
+  margin: 12px;
+  margin-left: 20px;
+}
+
+.btn-login {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 12px;
+  border-radius: 0px;
+  width: auto;
+  height: auto;
+  margin-bottom: 3px;
+}
+
+main div.container-fluid {}
