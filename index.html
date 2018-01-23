@@ -73,7 +73,7 @@
         </div>
         <div class="row">
           <div class="col-md-12 dropdown trailer">
-            <button class="btn-lg btn-trailer" type="button">
+            <button id="trailer" data-modal-id="modal-video" class="btn-lg btn-trailer" type="button">
                 WATCH TRAILER
               </button>
           </div>
@@ -141,156 +141,214 @@
     </div>
     <div class="row">
       <div class="col-md-12 filtre">
-        <button class="btn-sm nav-btn" type="button">
+        <button id="all-button" class="btn-sm nav-btn" type="button">
             ALL
           </button>
-        <button class="btn-sm nav-btn" type="button">
+        <button id="action-button" class="btn-sm nav-btn" type="button">
               ACTION
             </button>
-        <button class="btn-sm nav-btn" type="button">
+        <button id="police-button" class="btn-sm nav-btn" type="button">
                 POLICIERS
               </button>
       </div>
     </div>
-    <div class="row films-filtre" id="films">
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <button onclick="MoreMovies()" class="btn-sm nav-btn more" type="button">
-          Plus de films
-      </button>
-    </div>
-    <div class="row films-filtre">
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig">
-        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <button class="btn-sm nav-btn more" type="button">
-          Plus de Series
-      </button>
+    <div id="films">
+      <div class="row">
+        <div class="films-filtre">
+          <figure class="action-film" class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">action</span></figcaption>
+          </figure>
+          <figure class="police-film" class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">police</span></figcaption>
+          </figure>
+          <figure class="police-film" class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">police</span></figcaption>
+          </figure>
+          <figure class="films-fig action-film">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">action</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row" id="action">
+        <div class="films-filtre">
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <button onclick="MoreMovies()" class="btn-sm nav-btn more" type="button">
+              Plus de films
+          </button>
+        </div>
+      </div>
     </div>
     <div class="row">
       <div class="col-md-12 featured">
         <h1>FEATURES SERIES TV</h1>
       </div>
     </div>
-
-
-
+    <div class="row">
+      <div class="col-md-12 filtre">
+        <button class="btn-sm nav-btn" type="button">
+          ALL
+        </button>
+        <button class="btn-sm nav-btn" type="button">
+            ACTION
+          </button>
+        <button class="btn-sm nav-btn" type="button">
+              POLICIERS
+            </button>
+      </div>
+    </div>
+    <div id="series">
+      <div class="row">
+        <div class="films-filtre">
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="films-filtre">
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <button onclick="MoreSeries()" class="btn-sm nav-btn more" type="button">
+              Plus de series
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- trailer modal -->
+  <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-video">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="854" height="480" src="https://www.youtube.com/embed/2VVEAkYlA8o" frameborder="0" encrypted-media " allowfullscreen"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- trailer modal -->
+
+
+
   <!-- Content -->
 
   <!-- Footer  -->
@@ -298,11 +356,17 @@
 
   </footer>
   <!-- Optional JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="assets/js/file.js"></script>
+  <script type="text/javascript" src="assets/js/filter.js"></script>
+  <script type="text/javascript" src="assets/js/trailer.js"></script>
+  <script type="text/javascript" src="assets/js/moreFilms.js"></script>
+  <script type="text/javascript" src="assets/js/moreSeries.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 
