@@ -7,6 +7,10 @@ body {
   height: 480px;
 }
 
+row {
+  z-index: 2
+}
+
 #headerCarousel img {
   filter: brightness(0.5);
   object-fit: cover;
@@ -23,7 +27,7 @@ body {
   z-index: 1;
 }
 
-header div.container-fluid {
+div.container-fluid {
   position: absolute;
   color: white;
   z-index: 2;
@@ -51,7 +55,7 @@ header div.container-fluid {
   text-align: left;
 }
 
-.nav-btn:last-child {
+.dropdown .nav-btn:last-child {
   margin-left: 60px;
 }
 
@@ -197,6 +201,7 @@ input[type="text"], textarea {
   font-weight: bold;
   border-radius: 0px;
   height: 50px;
+  cursor: pointer;
 }
 
 .carousel-indicators li {
@@ -221,6 +226,68 @@ input[type="text"], textarea {
   width: auto;
   height: auto;
   margin-bottom: 3px;
+  cursor: pointer;
 }
 
-main div.container-fluid {}
+.films {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 300px;
+  width: 70%;
+  border: 1px solid grey;
+  border-radius: 2px;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.films-filtre img, .films img {
+  height: 220px;
+  width: 150px;
+}
+
+figcaption {
+  color: black;
+  text-align: center
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.featured {
+  height: 45px;
+  width: 100%;
+}
+
+.featured h1 {
+  color: black;
+  font-size: 16px;
+  margin-left: 60px;
+  border-left: rgba(255, 65, 65, 1) solid 2px;
+}
+
+.filtre {
+  margin-left: 180px;
+  height : 96px;
+}
+
+.films-filtre {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: auto;
+  width: 72%;
+  border-radius: 2px;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.more {
+    width: 150px;
+    margin-bottom: 20px !important;
+}
