@@ -12,113 +12,362 @@
   <link href="assets/css/style-perso.css" type="text/css" rel="stylesheet" />
   <!-- <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Kalam:400,700|Noticia+Text:400i,700i" rel="stylesheet"> -->
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png" /> -->
 </head>
 
 <body>
   <!-- HEADER Slider -->
-  <header>
-    <div class="container-fluid">
-      <div class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="logo col-md-4">
-              <span class="red">ALLEZ</span>CINE!
-            </div>
-            <div class="col-md-6">
+  <div class="container-fluid">
+    <div class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="logo col-md-4">
+            <span class="red">ALLEZ</span>CINE!
+          </div>
+          <div class="col-md-6">
 
-              <div class="dropdown">
-                <button class="btn-sm nav-btn" type="button">
+            <div class="dropdown">
+              <button class="btn-sm nav-btn" type="button">
                     HOME
                   </button>
-                <button class="btn-sm nav-btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn-sm nav-btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     GENRE
                   </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Action</button>
-                  <button class="dropdown-item" type="button">Comedy</button>
-                  <button class="dropdown-item" type="button">Western</button>
-                  <button type="button" class="dropdown-item">Fiction</button>
-                </div>
-                <button class="btn-sm nav-btn" type="button">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Comedy</button>
+                <button class="dropdown-item" type="button">Western</button>
+                <button type="button" class="dropdown-item">Fiction</button>
+              </div>
+              <button class="btn-sm nav-btn" type="button">
                     FILMS
                   </button>
-                <button class="btn-sm nav-btn" type="button">
+              <button class="btn-sm nav-btn" type="button">
                     SERIES
                   </button>
-                <button class="btn-sm nav-btn" type="button">
+              <button class="btn-sm nav-btn" type="button">
                     SHOP
                   </button>
-                <button class="btn-sm nav-btn" type="button">
+              <button class="btn-sm nav-btn" type="button">
                     CONTACT
                   </button>
-              </div>
             </div>
-            <div class="col-md-2 search-col">
-              <div class="container">
-                <form class="form">
-                  <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Recherche" aria-label="Search" id="mysearch">
-                    <div class="input-group-addon search-btn">
-                      <button class="search-btn" type="submit" id="search-btn"><i class="fa fa-search"></i></button>
-                    </div>
+          </div>
+          <div class="col-md-2 search-col">
+            <div class="container">
+              <form class="form">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Recherche" aria-label="Search" id="mysearch">
+                  <div class="input-group-addon search-btn">
+                    <button class="searctitreh-btn" type="submit" id="search-btn"><i class="fa fa-search"></i></button>
                   </div>
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12 title">
-              <p>LATEST <span class="red">ON</span>LINE <span class="red">MO</span>VIES</p>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 title">
+            <p>LATEST <span class="red">ON</span>LINE <span class="red">MO</span>VIES</p>
           </div>
-          <div class="row">
-            <div class="col-md-12 dropdown trailer">
-              <button class="btn-lg btn-trailer" type="button">
+        </div>
+        <div class="row">
+          <div class="col-md-12 dropdown trailer">
+            <button id="trailer" data-modal-id="modal-video" class="btn-lg btn-trailer" type="button">
                 WATCH TRAILER
               </button>
+          </div>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div id="headerCarousel" class="carousel-item active">
+          <img class="d-block img-fluid" src="assets/img/cine1.jpg" alt="First slide">
+        </div>
+        <div id="headerCarousel" class="carousel-item">
+          <img class="d-block img-fluid" src="assets/img/cine2.jpg" alt="Second slide">
+        </div>
+        <div id="headerCarousel" class="carousel-item">
+          <img class="d-block img-fluid" src="assets/img/cine3.jpg" alt="Third slide">
+        </div>
+        <div id="headerCarousel" class="carousel-item">
+          <img class="d-block img-fluid" src="assets/img/cine4.jpg" alt="Third slide">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 header-bot">
+        <p class="fa fa-phone"> (+000) 009 455 4068</p>
+        <button class="btn btn-login" type="button" name="button">LOGIN</button>
+        <button class="btn btn-login" type="button" name="button">REGISTER</button>
+      </div>
+    </div>
+    <div class="films">
+      <figure class="films-fig">
+        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+        <figcaption>titre</figcaption>
+        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+      </figure>
+      <figure class="films-fig">
+        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+        <figcaption>titre</figcaption>
+        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+      </figure>
+      <figure class="films-fig">
+        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+        <figcaption>titre</figcaption>
+        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+      </figure>
+      <figure class="films-fig">
+        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+        <figcaption>titre</figcaption>
+        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+      </figure>
+      <figure class="films-fig">
+        <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+        <figcaption>titre</figcaption>
+        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+      </figure>
+    </div>
+    <div class="row">
+      <div class="col-md-12 featured">
+        <h1>FEATURED MOVIES</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 filtre">
+        <button id="all-button" class="btn-sm nav-btn" type="button">
+            ALL
+          </button>
+        <button id="action-button" class="btn-sm nav-btn" type="button">
+              ACTION
+            </button>
+        <button id="police-button" class="btn-sm nav-btn" type="button">
+                POLICIERS
+              </button>
+      </div>
+    </div>
+    <div id="films">
+      <div class="row">
+        <div class="films-filtre">
+          <figure class="action-film" class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">action</span></figcaption>
+          </figure>
+          <figure class="police-film" class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">police</span></figcaption>
+          </figure>
+          <figure class="police-film" class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">police</span></figcaption>
+          </figure>
+          <figure class="films-fig action-film">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">action</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row" id="action">
+        <div class="films-filtre">
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <button onclick="MoreMovies()" class="btn-sm nav-btn more" type="button">
+              Plus de films
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 featured">
+        <h1>FEATURES SERIES TV</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 filtre">
+        <button class="btn-sm nav-btn" type="button">
+          ALL
+        </button>
+        <button class="btn-sm nav-btn" type="button">
+            ACTION
+          </button>
+        <button class="btn-sm nav-btn" type="button">
+              POLICIERS
+            </button>
+      </div>
+    </div>
+    <div id="series">
+      <div class="row">
+        <div class="films-filtre">
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="films-filtre">
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+          <figure class="films-fig">
+            <img src="assets/img/slide1.jpg" alt="" class="films-slide">
+            <figcaption>titre</figcaption>
+            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <button onclick="MoreSeries()" class="btn-sm nav-btn more" type="button">
+              Plus de series
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- trailer modal -->
+  <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-video">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="854" height="480" src="https://www.youtube.com/embed/2VVEAkYlA8o" frameborder="0" encrypted-media " allowfullscreen"></iframe>
             </div>
           </div>
         </div>
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div id="headerCarousel" class="carousel-item active">
-            <img class="d-block img-fluid" src="assets/img/potter.jpg" alt="First slide">
-          </div>
-          <div id="headerCarousel" class="carousel-item">
-            <img class="d-block img-fluid" src="assets/img/potter.jpg" alt="Second slide">
-          </div>
-          <div id="headerCarousel" class="carousel-item">
-            <img class="d-block img-fluid" src="assets/img/potter.jpg" alt="Third slide">
-          </div>
-          <div id="headerCarousel" class="carousel-item">
-            <img class="d-block img-fluid" src="assets/img/potter.jpg" alt="Third slide">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 header-bot">
-          <p class="fa fa-phone"> (+000) 009 455 4068</p>
-          <button class="btn btn-login" type="button" name="button">LOGIN</button>
-          <button class="btn btn-login" type="button" name="button">REGISTER</button>
-        </div>
       </div>
     </div>
-  </header>
-  <!-- Content -->
-  <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-8">
+  </div>
+  <!-- trailer modal -->
 
-        </div>
-      </div>
-    </div>
-  </main>
+
+
+  <!-- Content -->
+
   <!-- Footer  -->
-<footer>
+  <footer>
+
+  </footer>
+  <!-- Optional JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="assets/js/file.js"></script>
+  <script type="text/javascript" src="assets/js/filter.js"></script>
+  <script type="text/javascript" src="assets/js/trailer.js"></script>
+  <script type="text/javascript" src="assets/js/moreFilms.js"></script>
+  <script type="text/javascript" src="assets/js/moreSeries.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>
