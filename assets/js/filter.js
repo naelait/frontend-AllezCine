@@ -7,7 +7,7 @@ function policeFilter() {
   for (i of policeFilm) {
     i.style.display = "none"
   }
-  for (i of actionFilm){
+  for (i of actionFilm) {
     i.style.display = "inline"
   }
 }
@@ -18,16 +18,16 @@ function actionFilter() {
   for (i of actionFilm) {
     i.style.display = "none"
   }
-  for (i of policeFilm){
+  for (i of policeFilm) {
     i.style.display = "inline"
   }
 }
 
-function reset(){
+function reset() {
   for (i of actionFilm) {
     i.style.display = "inline"
   }
-  for (i of policeFilm){
+  for (i of policeFilm) {
     i.style.display = "inline"
   }
 }
