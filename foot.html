@@ -8,9 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
       /* //////////////////////////////////////////////  A COPIER DANS CSS */
-footer{
-  background-color: #0D0D0D;
-}
+
+      footer {
+        background-color: #0D0D0D;
+      }
+
       .flex1 {
         display: flex;
       }
@@ -19,13 +21,34 @@ footer{
         width: 20%;
         padding: 10px;
       }
-      .footTitre{
+
+      .footTitre,
+      .footTexte {
+        font-family: arial;
+        font-weight: bold;
         text-transform: uppercase;
-        color: white;
       }
-      .footTexte{
-        text-transform: uppercase;
+
+      .footTitre {
+        font-size: 14px;
+        color: #bebebe;
+      }
+
+      .footTexte {
+        font-size: 12px;
         color: #292929;
+      }
+
+      .footLigne {
+        height: 1px;
+        color: #292929;
+        background-color: #292929;
+        border: none;
+      }
+      .footVignette{
+        background-color: #292929;
+        padding: 2px;
+        color: white;
       }
 
       /* ////////////////////////////////////   FIN DE A COPIER DANS CSS */
@@ -40,9 +63,19 @@ footer{
       <div class="container">
         <div class="row">
           <div class="flex1">
-            <div class="col20"><p class="footTitre">Movies</p><p  class="footTexte">Aventure<br>Comedy<br>Fantasy<br>Action<br>Movies<br>Horror</p></div>
-            <div class="col20"> 2 of 5 </div>
-            <div class="col20"> 3 of 5 </div>
+            <div class="col20">
+              <p class="footTitre">Release</p>
+              <hr class="footLigne">
+              <p class="footTexte">2017<br>2016<br>2015<br>2014<br>2013<br>2012</p>
+            </div>
+            <div class="col20">
+              <p class="footTitre">Movies</p>
+              <hr class="footLigne">
+              <p class="footTexte">Aventure<br>Comedy<br>Fantasy<br>Action<br>Movies<br>Horror</p>
+            </div>
+            <div class="col20"><p class="footTitre">Revieuw Movies</p>
+            <hr class="footLigne">
+            <p class="footTexte">Aventure<br>Comedy<br>Fantasy<br>Action<br>Movies<br>Horror</p></div>
             <div class="col20"> 4 of 5 </div>
             <div class="col20"> 5 of 5 </div>
           </div>
