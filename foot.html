@@ -21,9 +21,13 @@
         width: 20%;
         padding: 10px;
       }
-
+      .col100 {
+        width: 100%;
+        padding: 10px;
+      }
       .footTitre,
-      .footTexte {
+      .footTexte,
+      .footConnectUs {
         font-family: arial;
         font-weight: bold;
         text-transform: uppercase;
@@ -64,13 +68,37 @@
       }
 
       .footLatestImg {
+        width: 40%;
+        height: auto;
         vertical-align: middle;
+        /* float:right;  */
         margin-right: 5px;
         margin-bottom: -10px;
       }
 
+      .footLogo {
+        margin-top: 10px;
+        margin-bottom: 12px;
+        font-family: arial;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .footAllezImg {
+        width: 30%;
+        height: auto;
+        margin-bottom: -3px;
+      }
+
+      .footConnectUs {
+        text-align: center;
+        font-size: 18px;
+        color: #bebebe;
+      }
+
       /* ////////////////////////////////////   FIN DE A COPIER DANS CSS */
     </style>
+    <link href="assets/css/style-perso.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="images/favicon.png" /> </head>
 
@@ -106,7 +134,20 @@
               <p><img class="footLatestImg" src="assets/img/footLatest3.jpg" alt="Eveniet Ut Molesti"><span class="footLatest">Eveniet Ut Molesti</span></p>
               <p><img class="footLatestImg" src="assets/img/footLatest4.jpg" alt="Eveniet Ut Molesti"><span class="footLatest">Earum Rerum Tenet</span></p>
             </div>
-            <div class="col20"> 5 of 5 </div>
+            <div class="col20">
+              <p class="footTitre footLogo"><span class="red">ALLEZ</span>CINE!</p>
+              <hr class="footLigne"> <img class="footAllezImg" src="assets/img/aff-xs1.jpg" alt=""><img class="footAllezImg" src="assets/img/aff-xs2.jpg" alt=""><img class="footAllezImg" src="assets/img/aff-xs3.jpg" alt=""><br><img class="footAllezImg" src="assets/img/aff-xs4.jpg"
+                alt=""><img class="footAllezImg" src="assets/img/aff-xs5.jpg" alt=""><img class="footAllezImg" src="assets/img/aff-xs6.jpg" alt=""> </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="flex1">
+            <div class="col100">
+              <hr class="footLigne">
+              <p class="footConnectUs">Connect Us</p>
+            </div>
           </div>
         </div>
       </div>
