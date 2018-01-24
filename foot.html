@@ -21,9 +21,35 @@
         width: 20%;
         padding: 10px;
       }
+
       .col100 {
+        text-align: center;
         width: 100%;
         padding: 10px;
+      }
+      .footSubscribe {
+        font-family: arial;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .form-subscribe{
+        width: 300px;
+        height: 30px;
+        padding: 2px;
+        padding-left: 5px;
+        margin-right: 3px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+      }
+      .btn-subscribe {
+        background-color: rgb(255, 55, 55);
+        border: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 0px;
+        height: 25px;
+        cursor: pointer;
       }
       .footTitre,
       .footTexte,
@@ -92,9 +118,26 @@
 
       .footConnectUs {
         text-align: center;
-        font-size: 18px;
-        color: #bebebe;
+        font-size: 16px;
+        color: #a4a4a4;
       }
+
+      .footRs {
+        width: 24px;
+        height: 24px;
+        padding-top: 2px;
+        display: inline-block;
+        border: 1px solid #a4a4a4;
+        border-radius: 2px;
+        text-align: center;
+        color: #a4a4a4;
+      }
+
+      .fa,
+      .fa a {
+        color: #a4a4a4;
+      }
+
 
       /* ////////////////////////////////////   FIN DE A COPIER DANS CSS */
     </style>
@@ -106,6 +149,22 @@
     <!-- Footer  -->
     <footer>
       <!-- ////////////////////////////////////   A COPIER DANS FOOTER  -->
+      <div class="container">
+        <div class="row">
+          <div class="flex1">
+            <div class="col100">
+              <p class="footSubscribe red">SUBSCRIBE TO US</p>
+              <form>
+                <input class="form-subscribe" type="text" placeholder="Enter your email" >
+              <button class="btn-lg btn-subscribe"  type="submit">
+                  SUBSCRIBE
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOT 5 COLONNES -->
       <div class="container">
         <div class="row">
           <div class="flex1">
@@ -141,12 +200,27 @@
           </div>
         </div>
       </div>
+      <!-- CONNECT US -->
       <div class="container">
         <div class="row">
           <div class="flex1">
             <div class="col100">
               <hr class="footLigne">
               <p class="footConnectUs">Connect Us</p>
+              <!-- Facebook -->
+              <div class="footRs"> <a href="https://www.facebook.com" target="_blank" class="footRsLien"><i class="fa fa-facebook icone-fontawesome"></i></a></div>
+              <!-- Twitter -->
+              <div class="footRs"> <a href="https://twitter.com" target="_blank" class="footRsLien">
+                  <i class="fa fa-twitter icone-fontawesome"></i></a></div>
+              <!-- Linkedin -->
+              <div class="footRs"> <a href="https://www.linkedin.com" target="_blank" class="footRsLien">
+                <i class="fa fa-linkedin icone-fontawesome"></i></a></div>
+              <!-- GitHub-->
+              <div class="footRs"> <a href="https://github.com" target="_blank" class="footRsLien">
+                <i class="fa fa-github icone-fontawesome"></i></a></div>
+              <!-- Google+ -->
+              <div class="footRs"> <a href="https://plus.google.com" target="_blank" class="footRsLien">
+                  <i class="fa fa-google-plus icone-fontawesome"></i></a></div>
             </div>
           </div>
         </div>
