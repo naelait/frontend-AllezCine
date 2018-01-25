@@ -51,7 +51,7 @@ div.container-fluid {
 }
 
 .red {
-  color: red;
+  color: rgb(255, 65, 65);
 }
 
 .col-md-6 .nav-btn {
@@ -370,21 +370,26 @@ footer {
 .form-subscribe {
   width: 300px;
   height: 30px;
-  padding: 2px;
+  padding: 1px;
   padding-left: 5px;
   margin-right: 3px;
   box-sizing: border-box;
-  background-color: #ffffff;
+}
+
+.form-subscribe[type="text"], textarea {
+  border-radius: 0px;
+  background-color: white;
 }
 
 .btn-subscribe {
+  margin-top: -5px;
   background-color: rgb(255, 55, 55);
   border: none;
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   border-radius: 0px;
-  height: 25px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -438,8 +443,8 @@ footer {
 }
 
 .footLogo {
-  margin-top: 10px;
-  margin-bottom: 12px;
+  margin-top: -3px;
+  margin-bottom: -3px;
   font-family: arial;
   font-size: 18px;
   font-weight: bold;
@@ -458,9 +463,10 @@ footer {
 }
 
 .footRs {
-  width: 24px;
-  height: 24px;
-  padding-top: 2px;
+  width: 28px;
+  height: 28px;
+  /* padding-top: 2px; */
+  padding: 2px;
   display: inline-block;
   border: 1px solid #a4a4a4;
   border-radius: 2px;
@@ -478,6 +484,8 @@ a#cRetour {
   border: 3px solid rgb(255, 65, 65);
   border-radius: 50%;
   background-image: url(../img/arrow-top.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   position: fixed;
   right: 20px;
   opacity: 1;
