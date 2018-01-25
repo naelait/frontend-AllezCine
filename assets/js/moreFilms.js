@@ -3,7 +3,7 @@ $('#plus-de-films').click(function() {
     if (i.style.display == "") {
       i.style.display = "block"
     } else {
-      i.style.display = "none"
+      i.style.display = ""
       $('html, body').animate({
         scrollTop: $("#films").offset().top
       }, 200);
@@ -12,7 +12,7 @@ $('#plus-de-films').click(function() {
   if (this.value == "Plus de films") {
     this.value = "Moins de films"
   } else {
-    this.value = "Plus de Films"
+    this.value = "Plus de films"
   }
 
 })

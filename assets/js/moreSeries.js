@@ -3,7 +3,7 @@ $('#plus-de-series').click(function() {
     if (i.style.display == "") {
       i.style.display = "block"
     } else {
-      i.style.display = "none"
+      i.style.display = ""
       $('html, body').animate({
         scrollTop: $("#series").offset().top
       }, 200);

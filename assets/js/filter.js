@@ -8,7 +8,7 @@ function policeFilter() {
     i.style.display = "none"
   }
   for (i of actionFilm) {
-    i.style.display = "inline"
+    i.style.display = "block"
   }
 }
 
@@ -19,16 +19,16 @@ function actionFilter() {
     i.style.display = "none"
   }
   for (i of policeFilm) {
-    i.style.display = "inline"
+    i.style.display = "block"
   }
 }
 
 function reset() {
   for (i of actionFilm) {
-    i.style.display = "inline"
+    i.style.display = "block"
   }
   for (i of policeFilm) {
-    i.style.display = "inline"
+    i.style.display = "block"
   }
 }
 
