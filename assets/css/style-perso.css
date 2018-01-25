@@ -1,9 +1,15 @@
-.no-pad-left-right {
-  padding-right: 0px !important;
-  padding-left: 0px !important;
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
 }
-.row {
-  width: 100%
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 body {
@@ -11,9 +17,8 @@ body {
 }
 
 #headerCarousel {
-  height: 480px;
+  max-height: 480px;
 }
-
 
 #headerCarousel img {
   filter: brightness(0.5);
@@ -27,32 +32,22 @@ body {
   height: 3px;
 }
 
-.carousel {
+.overlay {
+  position: absolute;
   z-index: 1;
 }
 
-div.container-fluid {
-  position: absolute;
-  color: white;
-  z-index: 2;
-  padding: 0;
-  min-width: 1144px;
-}
 
 .logo {
   font-size: 42px;
-  margin-top: 32px;
-  text-align: center;
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .red {
   color: rgb(255, 65, 65);
 }
 
-.col-md-6 .nav-btn {
-  text-align: center;
-}
 
 .dropdown {
   margin-top: 32px;
@@ -133,14 +128,7 @@ body {
   height: 20px;
 }
 
-.search-col {
-  margin-top: 32px;
-}
 
-.search {
-  width: 100%;
-  position: relative
-}
 
 .searchTerm {
   float: left;
@@ -233,7 +221,7 @@ input[type="text"], textarea {
   cursor: pointer;
 }
 
-.films {
+/* .films {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
@@ -244,7 +232,7 @@ input[type="text"], textarea {
   margin-top: 5px;
   margin-bottom: 40px;
   flex-wrap: wrap;
-}
+} */
 
 .films-filtre img, .films img {
   height: 220px;
