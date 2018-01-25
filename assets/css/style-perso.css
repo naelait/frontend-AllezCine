@@ -2,7 +2,6 @@
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
-
 .row {
   width: 100%
 }
@@ -15,9 +14,6 @@ body {
   height: 480px;
 }
 
-row {
-  z-index: 2
-}
 
 #headerCarousel img {
   filter: brightness(0.5);
@@ -351,7 +347,13 @@ figcaption {
 
 .films-bottom {
   height: 200px;
-  width: 170px;
+  width: 140px;
+}
+.shop-text {
+  background-color: #0D0D0D;
+}
+.shop-text p {
+  color: rgba(255, 65, 65, 1)
 }
 
 footer {
