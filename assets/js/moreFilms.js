@@ -3,7 +3,7 @@ $('#plus-de-films').click(function() {
     if (i.style.display == "") {
       i.style.display = "block"
     } else {
-      i.style.display = ""
+      i.style.display = "none"
       $('html, body').animate({
         scrollTop: $("#films").offset().top
       }, 200);
