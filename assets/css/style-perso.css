@@ -1,3 +1,4 @@
+
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
@@ -11,6 +12,7 @@
 
 body {
   background-color: #d7d3ce;
+
 }
 
 #headerCarousel {
@@ -40,9 +42,10 @@ div.col20 img {
 
 
 .logo {
-  font-size: 42px;
+  font-size: 2em;
   font-weight: bold;
   margin-left: 10px;
+  color: white;
 }
 
 .red {
@@ -178,7 +181,7 @@ input[type="text"], textarea {
   color: white;
   justify-content: center;
   text-align: center;
-  font-size: 72px;
+  font-size: 4vw;
   font-weight: bold;
 }
 

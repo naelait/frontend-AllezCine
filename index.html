@@ -21,24 +21,26 @@
     <div class="container-fluid overlay">
       <div class="row no-gutters ontop align-items-center">
         <div class="logo col justify-content-between"> <span class="red">ALLEZ</span>CINE! </div>
-        <div class="col-6">
+        <div class="col d-flex flex-nowrap" id="collapseNavBar">
+
           <button class="btn-sm nav-btn" type="button">
-                  HOME
-                </button> <button class="btn-sm nav-btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  GENRE
-                </button>
+                    HOME
+                  </button> <button class="btn-sm nav-btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    GENRE
+                  </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2"> <button class="dropdown-item" type="button">Action</button> <button class="dropdown-item" type="button">Comedy</button> <button class="dropdown-item" type="button">Western</button> <button type="button" class="dropdown-item">Fiction</button>            </div>
           <button class="btn-sm nav-btn" type="button">
-                  FILMS
-                </button> <button class="btn-sm nav-btn" type="button">
-                  SERIES
-                </button> <button class="btn-sm nav-btn" type="button">
-                  SHOP
-                </button> <button class="btn-sm nav-btn" type="button">
-                  CONTACT
-                </button>
+                    FILMS
+                  </button> <button class="btn-sm nav-btn" type="button">
+                    SERIES
+                  </button> <button class="btn-sm nav-btn" type="button">
+                    SHOP
+                  </button> <button class="btn-sm nav-btn" type="button">
+                    CONTACT
+                  </button>
         </div>
-        <div class="col">
+
+        <div class="col-lg-2 col-md-12 col-xs-12 col-sm-12">
 
           <form class="form">
             <div class="input-group"> <input class="form-control" type="text" placeholder="Recherche" aria-label="Search" id="mysearch">
@@ -48,12 +50,13 @@
 
         </div>
       </div>
+      </nav>
       <div class="row no-gutters">
-        <div class="col title">
+        <div class="col title d-none d-sm-block">
           <p>LATEST <span class="red">ON</span>LINE <span class="red">MO</span>VIES</p>
         </div>
       </div>
-      <div class="row no-gutters">
+      <div class="row no-gutters d-none d-md-block">
         <div class="col trailer"> <button id="trailer" data-modal-id="modal-video" class="btn-lg btn-trailer" type="button">
               WATCH TRAILER
             </button> </div>
@@ -70,10 +73,10 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-              <div id="headerCarousel" class="carousel-item active"> <img " class="d-block img-fluid " src="assets/img/cine1.jpg " alt="First slide "> </div>
-              <div id="headerCarousel " class="carousel-item "> <img " class="d-block img-fluid" src="assets/img/cine2.jpg" alt="Second slide"> </div>
-              <div id="headerCarousel" class="carousel-item"> <img " class="d-block img-fluid " src="assets/img/cine3.jpg " alt="Third slide "> </div>
-              <div id="headerCarousel " class="carousel-item "> <img " class="d-block img-fluid" src="assets/img/cine4.jpg" alt="Third slide"> </div>
+              <div id="headerCarousel" class="carousel-item"> <img class="d-block" src="assets/img/cine1.jpg" alt="First slide"> </div>
+              <div id="headerCarousel" class="carousel-item active"> <img class="d-block" src="assets/img/cine2.jpg" alt="Second slide"> </div>
+              <div id="headerCarousel" class="carousel-item"> <img class="d-block" src="assets/img/cine3.jpg " alt="Third slide"> </div>
+              <div id="headerCarousel" class="carousel-item"> <img class="d-block" src="assets/img/cine4.jpg" alt="Third slide"> </div>
             </div>
           </div>
         </div>
@@ -88,57 +91,55 @@
     </div>
   </header>
 
-  <div class="container d-flex justify-content-around p-2">
+  <div class="container-fluid d-flex justify-content-around p-2">
     <div class="row">
       <div class="col">
         <div class="text-center">
-          <img src="assets/img/aff-sm1.jpg" alt="">
+          <img class="img-fluid"src="assets/img/aff-sm1.jpg" alt="">
         </div>
-        <div class="caption">
-          <p class="text-center">titre </p>
-          <span class="left">date</span><span class="right">genre</span>
+        <div class="caption text-center">
+          titre </br>
+          date,  genre
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-center">
+          <img class="img-fluid"src="assets/img/aff-sm2.jpg" alt="">
+        </div>
+        <div class="caption text-center">
+          titre </br>
+          date,  genre
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-center">
+          <img class="img-fluid"src="assets/img/aff-sm3.jpg" alt="">
+        </div>
+        <div class="caption text-center">
+          titre </br>
+          date,  genre
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-center">
+          <img class="img-fluid"src="assets/img/aff-sm4.jpg" alt="">
+        </div>
+        <div class="caption text-center">
+          titre </br>
+          date,  genre
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-center">
+          <img class="img-fluid"src="assets/img/aff-sm5.jpg" alt="">
+        </div>
+        <div class="caption text-center">
+          titre </br>
+          date,  genre
         </div>
       </div>
 
-      <div class="col">
-        <div class="text-center">
-          <img src="assets/img/aff-sm2.jpg" alt="">
-        </div>
-        <div class="caption">
-          <p class="text-center">titre</p>
-          <span class="left">date</span><span class="right">genre</span>
-        </div>
-      </div>
 
-      <div class="col">
-        <div class="text-center">
-          <img src="assets/img/aff-sm3.jpg" alt="">
-        </div>
-        <div class="caption">
-          <p class="text-center">titre</p>
-          <span class="left">date</span><span class="right">genre</span>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="text-center">
-          <img src="assets/img/aff-sm4.jpg" alt="">
-        </div>
-        <div class="caption">
-          <p class="text-center">titre</p>
-          <span class="left">date</span><span class="right">genre</span>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="text-center">
-          <img src="assets/img/aff-sm5.jpg" alt="">
-        </div>
-        <div class="caption">
-          <p class="text-center">titre</p>
-          <span class="left">date</span><span class="right">genre</span>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -158,19 +159,19 @@
   </div>
   <div class="container">
     <div class="row no-gutters">
-      <div class="col-1">
+      <div class="col-2">
         <input id="movies-filter-All" class="btn-sm nav-btn" type="button" value="All"></input>
       </div>
-      <div class="col-1">
+      <div class="col-2">
         <input id="movies-filter-Action" class="btn-sm nav-btn" type="button" value="Action"></input>
       </div>
-      <div class="col-1">
+      <div class="col-2">
         <input id="movies-filter-Comedy" class="btn-sm nav-btn" type="button" value="Comedy"></input>
       </div>
-      <div class="col-1">
+      <div class="col-2">
         <input id="movies-filter-Adventure" class="btn-sm nav-btn" type="button" value="Adventure"></input>
       </div>
-      <div class="col-1">
+      <div class="col-2">
         <input id="movies-filter-Fiction" class="btn-sm nav-btn" type="button" value="Fiction"></input>
       </div>
     </div>
@@ -186,7 +187,7 @@
     </div>
   </div>
   <div class="row no-gutters">
-    <div class="col-md-12 no-pad-left-right d-flex justify-content-center">
+    <div class="col-12 no-pad-left-right d-flex justify-content-center">
       <input id="plus-de-films" class="btn-sm nav-btn more" type="button" value="Plus de films"></input>
     </div>
   </div>
@@ -226,7 +227,7 @@
     </div>
   </div>
   <div class="row no-gutters">
-    <div class="col-md-12 no-pad-left-right d-flex justify-content-center">
+    <div class="col-12 no-pad-left-right d-flex justify-content-center">
       <input id="plus-de-series" class="btn-sm nav-btn more" type="button" value="Plus de series"></input>
     </div>
   </div>
@@ -268,7 +269,7 @@
       <div class="row no-gutters">
         <div class="col-md-12 no-pad-left-right d-flex justify-content-around">
           <figure>
-            <img src="assets/img/slide1.jpg"  alt="" class="films-bottom ">
+            <img src="assets/img/slide1.jpg" alt="" class="films-bottom ">
             <figcaption>titre</figcaption>
             <figcaption><span class="left ">date</span><span class="right ">genre</span></figcaption>
           </figure>

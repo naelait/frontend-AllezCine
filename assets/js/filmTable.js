@@ -52,9 +52,9 @@ for (i of aff) {
               <div class="text-center">
                 <img  src="${i[1]}" alt="">
               </div>
-              <div class="caption">
-                <p class="text-center">${i[0]}</p>
-                <span class="left">${i[2]}</span><span class="right">${i[3]}</span>
+              <div class="caption text-center">
+                ${i[0]}</br>
+                ${i[2]},   ${i[3]}
               </div>
             </div>`;
   y++
