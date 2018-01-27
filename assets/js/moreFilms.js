@@ -1,5 +1,5 @@
 $('#plus-de-films').click(function() {
-  $('#toggle-movies').toggleClass("invisible") 
+  $('#toggle-movies').toggleClass("invisible")
   if (this.value == "Plus de films") {
     this.value = "Moins de films"
   } else {

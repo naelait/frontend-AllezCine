@@ -35,7 +35,7 @@ $("#movies-filter-Fiction").click( function(){
 })
 
 
-$("#series-filter-All").click( function(){
+$("#movies-filter-All").click( function(){
   $(".Action").removeClass("invisible")
   $(".Adventure").removeClass("invisible")
   $(".Fiction").removeClass("invisible")
@@ -43,28 +43,28 @@ $("#series-filter-All").click( function(){
 }
 )
 
-$("#series-filter-Comedy").click( function(){
+$("#movies-filter-Comedy").click( function(){
   $(".Action").addClass("invisible")
   $(".Adventure").addClass("invisible")
   $(".Fiction").addClass("invisible")
   $(".Comedy").removeClass("invisible")
 })
 
-$("#series-filter-Adventure").click( function(){
+$("#movies-filter-Adventure").click( function(){
   $(".Action").addClass("invisible")
   $(".Fiction").addClass("invisible")
   $(".Comedy").addClass("invisible")
   $(".Adventure").removeClass("invisible")
 })
 
-$("#series-filter-Action").click( function(){
+$("#movies-filter-Action").click( function(){
   $(".Action").removeClass("invisible")
   $(".Fiction").addClass("invisible")
   $(".Comedy").addClass("invisible")
   $(".Adventure").addClass("invisible")
 })
 
-$("#series-filter-Fiction").click( function(){
+$("#movies-filter-Fiction").click( function(){
   $(".Action").addClass("invisible")
   $(".Fiction").removeClass("invisible")
   $(".Comedy").addClass("invisible")

@@ -35,31 +35,43 @@ var aff = [
   ["Iron Man 2", "assets/img/aff-sm34.jpg", "2012", "Fiction"],
   ["Seuls", "assets/img/aff-sm35.jpg", "2011", "Comedy"]
 ];
-
-function createMovieRow() {
-  document.getElementById("movies").innerHTML = writeFilm
-}
-
-function createToggleMovieRow() {
-  document.getElementById("toggle-movies").innerHTML = writeFilm
-}
-var writeFilm = ""
+var writemovies = ""
 var y = -1
+var x = -1
 
-for (i of aff) {
-  writeFilm = `${writeFilm}
-              <div class="col ${i[3]}">
+function createmoviesRow() {
+  document.getElementById("movies").innerHTML = writemovies
+  y++
+}
+
+function createTogglemoviesRow() {
+  document.getElementById("toggle-movies").innerHTML = writemovies
+  x++
+}
+
+
+
+for (var i = 0; i < aff.length; i++) {
+  var rnd = Math.floor(Math.random() * 34) + 1
+  while (aff[rnd] == null) {
+    rnd = Math.floor(Math.random() * 34) + 1
+  }
+  writemovies = `${writemovies}
+              <div class="col ${aff[rnd][3]}">
               <div class="text-center">
-                <img  src="${i[1]}" alt="">
+                <img  src="${aff[rnd][1]}" alt="">
               </div>
               <div class="caption text-center">
-                ${i[0]}</br>
-                ${i[2]},   ${i[3]}
+                ${aff[rnd][0]}</br>
+                ${aff[rnd][2]},   ${aff[rnd][3]}
               </div>
             </div>`;
-  y++
-  if (y < 12) {
-    createMovieRow()
-    createToggleMovieRow()
+  if (y < 13) {
+    createmoviesRow()
+    aff.splice(rnd, 1)
+  }
+  if (x < 13) {
+    createTogglemoviesRow()
+    aff.splice(rnd, 1)
   }
 }

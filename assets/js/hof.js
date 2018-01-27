@@ -35,28 +35,19 @@ var aff = [
   ["Iron Man 2", "assets/img/aff-sm34.jpg", "2012", "Fiction"],
   ["Seuls", "assets/img/aff-sm35.jpg", "2011", "Comedy"]
 ];
-var writeSeries = ""
+var writehof = ""
 var y = -1
-var x = -1
 
-function createSeriesRow() {
-  document.getElementById("Series").innerHTML = writeSeries
-  y++
+function createhofRow() {
+  document.getElementById("hof").innerHTML = writehof
 }
-
-function createToggleSeriesRow() {
-  document.getElementById("toggle-Series").innerHTML = writeSeries
-  x++
-}
-
-
 
 for (var i = 0; i < aff.length; i++) {
   var rnd = Math.floor(Math.random() * 34) + 1
   while (aff[rnd] == null) {
     rnd = Math.floor(Math.random() * 34) + 1
   }
-  writeSeries = `${writeSeries}
+  writehof = `${writehof}
               <div class="col ${aff[rnd][3]}">
               <div class="text-center">
                 <img  src="${aff[rnd][1]}" alt="">
@@ -66,12 +57,9 @@ for (var i = 0; i < aff.length; i++) {
                 ${aff[rnd][2]},   ${aff[rnd][3]}
               </div>
             </div>`;
-  if (y < 13) {
-    createSeriesRow()
-    aff.splice(rnd, 1)
-  }
-  if (x < 13) {
-    createToggleSeriesRow()
+  y++
+  if (y < 5) {
+    createhofRow()
     aff.splice(rnd, 1)
   }
 }
