@@ -36,28 +36,15 @@ var aff = [
   ["Seuls", "assets/img/aff-sm35.jpg", "2011", "Comedy"]
 ];
 var writemovies = ""
-var y = -1
-var x = -1
+var writeToggleMovies = ""
 
 function createmoviesRow() {
-  document.getElementById("movies").innerHTML = writemovies
-  y++
-}
-
-function createTogglemoviesRow() {
-  document.getElementById("toggle-movies").innerHTML = writemovies
-  x++
-}
-
-
-
-for (var i = 0; i < aff.length; i++) {
-  var rnd = Math.floor(Math.random() * 34) + 1
+  var rnd = Math.floor(Math.random() * 12) + 1
   while (aff[rnd] == null) {
-    rnd = Math.floor(Math.random() * 34) + 1
+    rnd = Math.floor(Math.random() * 12) + 1
   }
   writemovies = `${writemovies}
-              <div class="col ${aff[rnd][3]}">
+              <div class="col ${aff[rnd][3]}-Movies">
               <div class="text-center">
                 <img  src="${aff[rnd][1]}" alt="">
               </div>
@@ -66,12 +53,30 @@ for (var i = 0; i < aff.length; i++) {
                 ${aff[rnd][2]},   ${aff[rnd][3]}
               </div>
             </div>`;
-  if (y < 13) {
-    createmoviesRow()
-    aff.splice(rnd, 1)
+  document.getElementById("movies").innerHTML = writemovies
+  aff.splice(rnd, 1)
+}
+
+function createToggleMoviesRow(){
+  var rnd = Math.floor(Math.random() * 34) + 1
+  while (aff[rnd] == null) {
+    rnd = Math.floor(Math.random() * 34) + 1
   }
-  if (x < 13) {
-    createTogglemoviesRow()
-    aff.splice(rnd, 1)
-  }
+  writeToggleMovies = `${writeToggleMovies}
+              <div class="col ${aff[rnd][3]}-Movies">
+              <div class="text-center">
+                <img  src="${aff[rnd][1]}" alt="">
+              </div>
+              <div class="caption text-center">
+                ${aff[rnd][0]}</br>
+                ${aff[rnd][2]},   ${aff[rnd][3]}
+              </div>
+            </div>`;
+  document.getElementById("toggle-movies").innerHTML = writeToggleMovies
+  aff.splice(rnd, 1)
+}
+
+for (var i=0;i<12;i++){
+  createmoviesRow()
+  createToggleMoviesRow()
 }
