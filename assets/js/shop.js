@@ -17,9 +17,9 @@ function createshopRow() {
 }
 
 for (var i = 0; i < aff.length; i++) {
-  writeshop = `${writeshop}<div class="col-md-3 col-xs-2 col-lg-3">
+  writeshop = `${writeshop}<div class="col-3">
     <div onclick="linkInfos" class="text-center">
-      <img class="shop-img" src="${aff[i][1]}">
+      <img class="shop-img img-fluid" src="${aff[i][1]}">
     </div>
     <div class="caption text-center">
       ${aff[i][0]}</br>
