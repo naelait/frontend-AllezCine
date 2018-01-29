@@ -22,13 +22,13 @@
       <div class="row no-gutters ontop align-items-center">
         <div class="logo col justify-content-between"> <span class="red">ALLEZ</span>CINE! </div>
         <div class="col d-flex flex-nowrap" id="collapseNavBar">
-          <button class="btn-sm nav-btn" type="button">HOME</button>
+          <a href="#haut"><button class="btn-sm nav-btn" type="button">HOME</button></a>
           <button class="btn-sm nav-btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GENRE</button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2"> <button class="dropdown-item" type="button">Action</button> <button class="dropdown-item" type="button">Comedy</button> <button class="dropdown-item" type="button">Western</button> <button type="button" class="dropdown-item">Fiction</button>            </div>
-          <button class="btn-sm nav-btn" type="button">FILMS</button>
-          <button class="btn-sm nav-btn" type="button">SERIES</button>
-          <button class="btn-sm nav-btn" type="button">SHOP</button>
-          <button class="btn-sm nav-btn" type="button">CONTACT</button>
+          <a href="#goto-movies"><button class="btn-sm nav-btn" type="button">FILMS</button></a>
+          <a href="#goto-series"><button class="btn-sm nav-btn" type="button">SERIES</button></a>
+          <a href="#goto-shop-js"><button class="btn-sm nav-btn" type="button">SHOP</button></a>
+          <a href="#contact"><button class="btn-sm nav-btn" type="button">CONTACT</button></a>
         </div>
         <div class="col-lg-2 col-md-12 col-xs-12 col-sm-12">
           <form class="form">
@@ -84,7 +84,7 @@
   </div>
   <!-- FEATURED MOVIES -->
   <div class="row no-gutters">
-    <div class="col-md-12 featured">
+    <div id="goto-movies" class="col-md-12 featured">
       <h1>FEATURED MOVIES</h1> </div>
   </div>
   <div class="container">
@@ -123,7 +123,7 @@
   </div>
   <!-- FEATURED SERIES -->
   <div class="row no-gutters">
-    <div class="col-md-12 no-pad-left-right featured">
+    <div id="goto-series" class="col-md-12 no-pad-left-right featured">
       <h1>FEATURES SERIES TV</h1> </div>
   </div>
   <div class="container">
@@ -161,30 +161,26 @@
     </div>
   </div>
   <!-- begin -->
-  <div class="row no-gutters">
+  <div id="goto-shop" class="row no-gutters">
     <div class="col-md-12 no-pad-left-right featured">
       <h1>SHOP MOVIES</h1>
     </div>
   </div>
   <div class="row no-gutters">
-    <div class="col-7 justify-content-around">
-      <div class="col">
-      <div class="text-center">
-        <img src="assets/img/aff-xs2.jpg">
-      </div>
-      <div class="caption text-center">
-        Titre</br>
-        Date,   Genre
+    <div class="col-7 justify-content-center">
+      <div class="container-fluid p-1">
+        <div class="row" id="shop-js"></div>
       </div>
     </div>
-    </div>
-    <div class="col-5 shop-text">
+    <div class="col-md-5 col-xs-12 shop-text">
+      <a id="next-js" class="next round right">&#8250;</a>
+      <a id="previous-js" class="previous round right">&#8249;</a>
       <iframe frameBorder="" width="100%" height="325px" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
-      <p>Titre</p>
-      <p>Story line : </p>
-      <p>Release on :</p>
-      <p>Genre :</p>
-      <p>Price :</p>
+      <p id="title-js"></p>
+      <p id="story-js"></p>
+      <p id="release-js"></p>
+      <p id="genre-js"></p>
+      <p id="prix-js"></p>
     </div>
   </div>
   <!-- End -->
@@ -287,6 +283,7 @@
   <script type="text/javascript" src="assets/js/filmTable.js"></script>
   <script type="text/javascript" src="assets/js/seriesTable.js"></script>
   <script type="text/javascript" src="assets/js/hof.js"></script>
+  <script type="text/javascript" src="assets/js/shop.js"></script>
   <script type="text/javascript" src="assets/js/gotop.js"></script>
   <script type="text/javascript" src="assets/js/file.js"></script>
   <script type="text/javascript" src="assets/js/filter.js"></script>

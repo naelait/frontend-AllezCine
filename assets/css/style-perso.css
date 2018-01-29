@@ -1,35 +1,36 @@
-
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
+.row.no-gutters>[class^="col-"], .row.no-gutters>[class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
 }
 
 body {
   background-color: #d7d3ce;
-
 }
 
 #headerCarousel {
   max-height: 480px;
 }
+
 div.col20 img {
   width: calc(100%/3);
 }
+
 #headerCarousel img {
   filter: brightness(0.5);
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
+
 .invisible {
   display: none
 }
+
 .carousel-indicators li {
   width: 20px;
   height: 3px;
@@ -39,7 +40,6 @@ div.col20 img {
   position: absolute;
   z-index: 1;
 }
-
 
 .logo {
   font-size: 2em;
@@ -51,7 +51,6 @@ div.col20 img {
 .red {
   color: rgb(255, 65, 65);
 }
-
 
 .dropdown {
   margin-top: 32px;
@@ -131,8 +130,6 @@ body {
   width: 36px;
   height: 20px;
 }
-
-
 
 .searchTerm {
   float: left;
@@ -225,7 +222,33 @@ input[type="text"], textarea {
   cursor: pointer;
 }
 
+.white {
+  color: white;
+}
+.shop-text a:not([href]):not([tabindex]) {
+  color: white;
+}
+.shop-text a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
 
+.shop-text a:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+}
+
+.shop-text .previous {
+    background-color: #0D0D0D;
+    color: white;
+}
+
+.shop-text .next {
+    background-color: #0D0D0D;
+    color: white;
+}
 .films-filtre img, .films img {
   height: 220px;
   width: 150px;
@@ -244,7 +267,6 @@ figcaption {
   float: right;
 }
 
-
 .featured {
   height: 45px;
   width: 100%;
@@ -261,17 +283,6 @@ figcaption {
   margin-left: 180px;
   height: 96px;
 }
-
-/*.films-filtre {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  height: auto;
-  width: 100%;
-  border-radius: 2px;
-  align-content: center;
-  flex-wrap: wrap;
-}*/
 
 .more {
   width: 150px;
@@ -323,11 +334,20 @@ figcaption {
   height: 200px;
   width: 140px;
 }
+
 .shop-text {
   background-color: #0D0D0D;
 }
+
 .shop-text p {
-  color: rgba(255, 65, 65, 1)
+  color: rgba(255, 65, 65, 1);
+  margin-left: 5px;
+}
+
+.shop-img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
 }
 
 footer {
