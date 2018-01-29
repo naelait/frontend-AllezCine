@@ -18,8 +18,8 @@ function createshopRow() {
 
 for (var i = 0; i < aff.length; i++) {
   writeshop = `${writeshop}<div class="col-3">
-    <div onclick="linkInfos" class="text-center">
-      <img class="shop-img img-fluid" src="${aff[i][1]}">
+    <div class="text-center">
+      <img id="${i}" class="shop-img img-fluid shop-item" src="${aff[i][1]}">
     </div>
     <div class="caption text-center">
       ${aff[i][0]}</br>
@@ -32,12 +32,12 @@ for (var i = 0; i < aff.length; i++) {
   }
 }
 function showInfos(){
-  $('#title-js').html(`Titre: <span class="white">${aff[0+x][0]}</span>`)
-  $('#story-js').html(`Story line: <span class="white">${aff[0+x][5]}</span>`)
-  $('#release-js').html(`Année de Sortie: <span class="white">${aff[0+x][2]}</span>`)
-  $('#genre-js').html(`Genre: <span class="white">${aff[0+x][3]}</span>`)
+  $('#title-js').html(`Titre: <span class="white">${aff[x][0]}</span>`)
+  $('#story-js').html(`Story line: <span class="white">${aff[x][5]}</span>`)
+  $('#release-js').html(`Année de Sortie: <span class="white">${aff[x][2]}</span>`)
+  $('#genre-js').html(`Genre: <span class="white">${aff[x][3]}</span>`)
   $('#prix-js').html(`Prix: <span class="white">15€</span>`)
-  $('iframe').attr('src', aff[0+x][4])
+  $('iframe').attr('src', aff[x][4])
 }
 showInfos()
 $("#next-js").click(function(){
@@ -53,4 +53,16 @@ $("#previous-js").click(function(){
     x = 7
   }
   showInfos()
+})
+
+$('.shop-item').click(function(e){
+  e = e || window.event;
+  e = e.target || e.srcElement;
+  id = e.id
+  $('#title-js').html(`Titre: <span class="white">${aff[id][0]}</span>`)
+  $('#story-js').html(`Story line: <span class="white">${aff[id][5]}</span>`)
+  $('#release-js').html(`Année de Sortie: <span class="white">${aff[id][2]}</span>`)
+  $('#genre-js').html(`Genre: <span class="white">${aff[id][3]}</span>`)
+  $('#prix-js').html(`Prix: <span class="white">15€</span>`)
+  $('iframe').attr('src', aff[id][4])
 })

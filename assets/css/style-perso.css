@@ -558,16 +558,19 @@ a#cRetour.cVisible {
 .fixeFacebook {
   margin-top: -21px;
   background-color: #3B5998;
+  z-index: 3
 }
 
 .fixeDribbble {
   margin-top: 27px;
   background-color: #EA4C89;
+  z-index: 3
 }
 
 .fixeGoogle {
   margin-top: 75px;
   background-color: #DD4B39;
+  z-index: 3
 }
 
 .fixeIcon {

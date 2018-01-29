@@ -5,6 +5,6 @@ for (i = 0; i < 6; i++) {
     i--;
   } else {
     myArray.push(nbrAleatoire);
-    document.write('<img class="footAllezImg" src="assets/img/aff-xs' + nbrAleatoire + '.jpg" >');
+    document.write('<img class="footAllezImg" src="assets/img/aff-xs' + nbrAleatoire + '.jpg" />');
   }
 }
