@@ -7,49 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="assets/css/style-perso.css" type="text/css" rel="stylesheet" />
     <style>
-
-    .fixeFacebook {
-        position: fixed;
-        background-color: #3e5f94;
-        width: 135px;
-        height: 46px;
-        border-radius: 23px;
-        left: 0px;
-        top: 50%;
-        margin-top: -50px;
-        margin-left: -90px;
-    }
     </style>
-    <title>Hello, world!</title>
+    <title>Contact</title>
   </head>
 
   <body>
-    <div class="row">
-    <div class="col-lg-3 fixeRS">
-        Fixed content
-    </div>
-</div>
-    <!-- Bouton execution modal -->
-    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  	  Lancer la modal
-  	</button>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4> </div>
-          <div class="modal-body"> Exemple de modal </div>
-        </div>
-        <!-- /.modal-content -->
+    <form>
+    <div class="container">
+      <div class="row no-gutters">
+          <div class="col-12 col-lg-6"><input class="form-subscribe" type="texte" name="contactFirstname" id="contactFirstname" placeholder="FIRST NAME"></div>
+          <div class="col-12 col-lg-6"><input class="form-subscribe" type="texte" name="contactLastname" id="contactLastname" placeholder="LAST NAME"></div>
+          <div class="col-12 col-lg-6"><input class="form-subscribe" type="texte" name="contactEmail" id="contactEmail" placeholder="EMAIL"></div>
+          <div class="col-12 col-lg-6"><input class="form-subscribe" type="texte" name="contactSubject" id="contactSubject" placeholder="SUBJECT"></div>
+          <div class="col-12"><textarea class="form-subscribe" name="contactMessage" id="contactMessage" rows="5" placeholder="YOUR MESSAGE"></textarea></div>
+          <div class="col-12">
+            <!-- Bouton Contact execution modal -->
+            <button class="btn-lg btn-subscribe" type="submit" value="SEND MESSAGE" onclick="getContact();">SEND MESSAGE</button>
+          </div>
       </div>
-      <!-- /.modal-dialog -->
     </div>
-    <div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempore facere fuga ullam aut magni, corporis quidem cupiditate similique, animi eaque, molestias doloremque iusto voluptates illum. Expedita, fugit deserunt fuga.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non perspiciatis, fugiat ullam enim. Labore provident fuga, nihil fugit harum unde id, dolore iure! Ipsa quam molestiae nobis, laborum dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequatur excepturi adipisci, incidunt quas voluptatum magnam impedit? Ipsum ex culpa iusto exercitationem harum a, dolorem provident. Deserunt quis beatae unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, alias, necessitatibus. Laborum repudiandae, veniam dignissimos provident porro dolor corrupti mollitia ad tempore quibusdam doloribus! Itaque, cumque veritatis atque voluptas amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sint, tempore enim aliquam blanditiis sit consequatur recusandae perferendis dolore molestias sed, deleniti laudantium eum cupiditate in, natus eligendi. Facilis, fuga      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempore facere fuga ullam aut magni, corporis quidem cupiditate similique, animi eaque, molestias doloremque iusto voluptates illum. Expedita, fugit deserunt fuga.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non perspiciatis, fugiat ullam enim. Labore provident fuga, nihil fugit harum unde id, dolore iure! Ipsa quam molestiae nobis, laborum dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequatur excepturi adipisci, incidunt quas voluptatum magnam impedit? Ipsum ex culpa iusto exercitationem harum a, dolorem provident. Deserunt quis beatae unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, alias, necessitatibus. Laborum repudiandae, veniam dignissimos provident porro dolor corrupti mollitia ad tempore quibusdam doloribus! Itaque, cumque veritatis atque voluptas amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sint, tempore enim aliquam blanditiis sit consequatur recusandae perferendis dolore molestias sed, deleniti laudantium eum cupiditate in, natus eligendi. Facilis, fuga      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempore facere fuga ullam aut magni, corporis quidem cupiditate similique, animi eaque, molestias doloremque iusto voluptates illum. Expedita, fugit deserunt fuga.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non perspiciatis, fugiat ullam enim. Labore provident fuga, nihil fugit harum unde id, dolore iure! Ipsa quam molestiae nobis, laborum dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequatur excepturi adipisci, incidunt quas voluptatum magnam impedit? Ipsum ex culpa iusto exercitationem harum a, dolorem provident. Deserunt quis beatae unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, alias, necessitatibus. Laborum repudiandae, veniam dignissimos provident porro dolor corrupti mollitia ad tempore quibusdam doloribus! Itaque, cumque veritatis atque voluptas amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sint, tempore enim aliquam blanditiis sit consequatur recusandae perferendis dolore molestias sed, deleniti laudantium eum cupiditate in, natus eligendi. Facilis, fuga      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempore facere fuga ullam aut magni, corporis quidem cupiditate similique, animi eaque, molestias doloremque iusto voluptates illum. Expedita, fugit deserunt fuga.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non perspiciatis, fugiat ullam enim. Labore provident fuga, nihil fugit harum unde id, dolore iure! Ipsa quam molestiae nobis, laborum dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequatur excepturi adipisci, incidunt quas voluptatum magnam impedit? Ipsum ex culpa iusto exercitationem harum a, dolorem provident. Deserunt quis beatae unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, alias, necessitatibus. Laborum repudiandae, veniam dignissimos provident porro dolor corrupti mollitia ad tempore quibusdam doloribus! Itaque, cumque veritatis atque voluptas amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sint, tempore enim aliquam blanditiis sit consequatur recusandae perferendis dolore molestias sed, deleniti laudantium eum cupiditate in, natus eligendi. Facilis, fuga      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempore facere fuga ullam aut magni, corporis quidem cupiditate similique, animi eaque, molestias doloremque iusto voluptates illum. Expedita, fugit deserunt fuga.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non perspiciatis, fugiat ullam enim. Labore provident fuga, nihil fugit harum unde id, dolore iure! Ipsa quam molestiae nobis, laborum dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequatur excepturi adipisci, incidunt quas voluptatum magnam impedit? Ipsum ex culpa iusto exercitationem harum a, dolorem provident. Deserunt quis beatae unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, alias, necessitatibus. Laborum repudiandae, veniam dignissimos provident porro dolor corrupti mollitia ad tempore quibusdam doloribus! Itaque, cumque veritatis atque voluptas amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sint, tempore enim aliquam blanditiis sit consequatur recusandae perferendis dolore molestias sed, deleniti laudantium eum cupiditate in, natus eligendi. Facilis, fuga      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempore facere fuga ullam aut magni, corporis quidem cupiditate similique, animi eaque, molestias doloremque iusto voluptates illum. Expedita, fugit deserunt fuga.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non perspiciatis, fugiat ullam enim. Labore provident fuga, nihil fugit harum unde id, dolore iure! Ipsa quam molestiae nobis, laborum dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequatur excepturi adipisci, incidunt quas voluptatum magnam impedit? Ipsum ex culpa iusto exercitationem harum a, dolorem provident. Deserunt quis beatae unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, alias, necessitatibus. Laborum repudiandae, veniam dignissimos provident porro dolor corrupti mollitia ad tempore quibusdam doloribus! Itaque, cumque veritatis atque voluptas amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sint, tempore enim aliquam blanditiis sit consequatur recusandae perferendis dolore molestias sed, deleniti laudantium eum cupiditate in, natus eligendi. Facilis, fuga      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempore facere fuga ullam aut magni, corporis quidem cupiditate similique, animi eaque, molestias doloremque iusto voluptates illum. Expedita, fugit deserunt fuga.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non perspiciatis, fugiat ullam enim. Labore provident fuga, nihil fugit harum unde id, dolore iure! Ipsa quam molestiae nobis, laborum dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequatur excepturi adipisci, incidunt quas voluptatum magnam impedit? Ipsum ex culpa iusto exercitationem harum a, dolorem provident. Deserunt quis beatae unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, alias, necessitatibus. Laborum repudiandae, veniam dignissimos provident porro dolor corrupti mollitia ad tempore quibusdam doloribus! Itaque, cumque veritatis atque voluptas amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sint, tempore enim aliquam blanditiis sit consequatur recusandae perferendis dolore molestias sed, deleniti laudantium eum cupiditate in, natus eligendi. Facilis, fuga      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempore facere fuga ullam aut magni, corporis quidem cupiditate similique, animi eaque, molestias doloremque iusto voluptates illum. Expedita, fugit deserunt fuga.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non perspiciatis, fugiat ullam enim. Labore provident fuga, nihil fugit harum unde id, dolore iure! Ipsa quam molestiae nobis, laborum dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequatur excepturi adipisci, incidunt quas voluptatum magnam impedit? Ipsum ex culpa iusto exercitationem harum a, dolorem provident. Deserunt quis beatae unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, alias, necessitatibus. Laborum repudiandae, veniam dignissimos provident porro dolor corrupti mollitia ad tempore quibusdam doloribus! Itaque, cumque veritatis atque voluptas amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sint, tempore enim aliquam blanditiis sit consequatur recusandae perferendis dolore molestias sed, deleniti laudantium eum cupiditate in, natus eligendi. Facilis, fuga
-    </div>
-    <!-- /.modal -->
+  </form>
+  <script>
+  function getContact()
+{
+// var hu = document.getElementById("hu").innerHTML;
+var fname = document.getElementById("contactFirstname").value;
+var lname = document.getElementById("contactLastname").value;
+var email = document.getElementById("contactEmail").value;
+var subjet = document.getElementById("contactSubject").value;
+var message = document.getElementById("contactMessage").value;
+alert(fname + "\n" + lname + "\n" + email + "\n" + subjet + "\n" + message);
+}
+  </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
