@@ -37,20 +37,22 @@ var aff = [
 ];
 var writehof = ""
 var y = -1
-
+function createhofToggle(){
+  document.getElementById("second-hof").innerHTML = writehof
+}
 function createhofRow() {
   document.getElementById("hof").innerHTML = writehof
 }
 
 for (var i = 0; i < aff.length; i++) {
-  var rnd = Math.floor(Math.random() * 34) + 1
+  var rnd = Math.floor(Math.random() * 5) + 1
   while (aff[rnd] == null) {
-    rnd = Math.floor(Math.random() * 34) + 1
+    rnd = Math.floor(Math.random() * 5) + 1
   }
   writehof = `${writehof}
               <div class="col ${aff[rnd][3]}">
               <div class="text-center">
-                <img  src="${aff[rnd][1]}" alt="">
+                <img  id="hof" src="${aff[rnd][1]}" alt="">
               </div>
               <div class="caption text-center">
                 ${aff[rnd][0]}</br>
@@ -59,7 +61,14 @@ for (var i = 0; i < aff.length; i++) {
             </div>`;
   y++
   if (y < 5) {
+    createhofToggle()
     createhofRow()
     aff.splice(rnd, 1)
   }
 }
+$(document).ready(function(){
+        console.log("ok")
+        $("#hof").toggle("slide", {direction: "left"}, 2000);
+        $('#second-hof').toggle("slide", {direction: "right"}, 4000)
+});
+$('#second-hof').hide()

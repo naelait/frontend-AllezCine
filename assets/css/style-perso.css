@@ -221,6 +221,9 @@ input[type="text"], textarea {
   margin-bottom: 3px;
   cursor: pointer;
 }
+.hof-div {
+  border : 1px solid grey
+}
 
 .white {
   color: white;
@@ -587,4 +590,21 @@ a#cRetour.cVisible {
 
 .faFixe, .faFixe a {
   color: #000000;
+}
+
+
+
+
+/*Media Queries*/
+
+
+
+@media (max-width: 768px) {
+  .flex1 {
+    flex-wrap: wrap;
+  }
+  .col20 {
+    width: 100%;
+    padding: 10px;
+  }
 }
