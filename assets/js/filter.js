@@ -1,40 +1,72 @@
-var allFilms = document.getElementsByClassName('films')
-var actionFilm = document.getElementsByClassName('action-film')
-var policeFilm = document.getElementsByClassName('police-film')
-
-
-function policeFilter() {
-  for (i of policeFilm) {
-    i.style.display = "none"
-  }
-  for (i of actionFilm){
-    i.style.display = "block"
-  }
+$("#movies-filter-All").click( function(){
+  $(".Action-Movies").removeClass("invisible")
+  $(".Adventure-Movies").removeClass("invisible")
+  $(".Fiction-Movies").removeClass("invisible")
+  $(".Comedy-Movies").removeClass("invisible")
 }
+)
+
+$("#movies-filter-Comedy").click( function(){
+  $(".Action-Movies").addClass("invisible")
+  $(".Adventure-Movies").addClass("invisible")
+  $(".Fiction-Movies").addClass("invisible")
+  $(".Comedy-Movies").removeClass("invisible")
+})
+
+$("#movies-filter-Adventure").click( function(){
+  $(".Action-Movies").addClass("invisible")
+  $(".Fiction-Movies").addClass("invisible")
+  $(".Comedy-Movies").addClass("invisible")
+  $(".Adventure-Movies").removeClass("invisible")
+})
+
+$("#movies-filter-Action").click( function(){
+  $(".Action-Movies").removeClass("invisible")
+  $(".Fiction-Movies").addClass("invisible")
+  $(".Comedy-Movies").addClass("invisible")
+  $(".Adventure-Movies").addClass("invisible")
+})
+
+$("#movies-filter-Fiction").click( function(){
+  $(".Action-Movies").addClass("invisible")
+  $(".Fiction-Movies").removeClass("invisible")
+  $(".Comedy-Movies").addClass("invisible")
+  $(".Adventure-Movies").addClass("invisible")
+})
 
 
-
-function actionFilter() {
-  for (i of actionFilm) {
-    i.style.display = "none"
-  }
-  for (i of policeFilm){
-    i.style.display = "block"
-  }
+$("#series-filter-All").click( function(){
+  $(".Action-Series").removeClass("invisible")
+  $(".Adventure-Series").removeClass("invisible")
+  $(".Fiction-Series").removeClass("invisible")
+  $(".Comedy-Series").removeClass("invisible")
 }
+)
 
+$("#series-filter-Comedy").click( function(){
+  $(".Action-Series").addClass("invisible")
+  $(".Adventure-Series").addClass("invisible")
+  $(".Fiction-Series").addClass("invisible")
+  $(".Comedy-Series").removeClass("invisible")
+})
 
-function reset() {
-  for (i of actionFilm) {
-    i.style.display = "block"
-  }
-  for (i of policeFilm) {
+$("#series-filter-Adventure").click( function(){
+  $(".Action-Series").addClass("invisible")
+  $(".Fiction-Series").addClass("invisible")
+  $(".Comedy-Series").addClass("invisible")
+  $(".Adventure-Series").removeClass("invisible")
+})
 
-    i.style.display = "block"
+$("#series-filter-Action").click( function(){
+  $(".Action-Series").removeClass("invisible")
+  $(".Fiction-Series").addClass("invisible")
+  $(".Comedy-Series").addClass("invisible")
+  $(".Adventure-Series").addClass("invisible")
+})
 
-  }
-}
-
-$('#action-button').click(policeFilter)
-$('#police-button').click(actionFilter)
-$('#all-button').click(reset)
+$("#series-filter-Fiction").click( function(){
+  $(".Action-Series").addClass("invisible")
+  $(".Fiction-Series").removeClass("invisible")
+  $(".Comedy-Series").addClass("invisible")
+  $(".Adventure-Series").addClass("invisible")
+})

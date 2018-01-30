@@ -1,10 +1,11 @@
-.no-pad-left-right {
-  padding-right: 0px !important;
-  padding-left: 0px !important;
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.row {
-  width: 100%
+.row.no-gutters>[class^="col-"], .row.no-gutters>[class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 body {
@@ -12,11 +13,11 @@ body {
 }
 
 #headerCarousel {
-  height: 480px;
+  max-height: 480px;
 }
 
-row {
-  z-index: 2
+div.col20 img {
+  width: calc(100%/3);
 }
 
 #headerCarousel img {
@@ -26,36 +27,29 @@ row {
   height: 100%;
 }
 
+.invisible {
+  display: none
+}
+
 .carousel-indicators li {
   width: 20px;
   height: 3px;
 }
 
-.carousel {
+.overlay {
+  position: absolute;
   z-index: 1;
 }
 
-div.container-fluid {
-  position: absolute;
-  color: white;
-  z-index: 2;
-  padding: 0;
-  min-width: 1144px;
-}
-
 .logo {
-  font-size: 42px;
-  margin-top: 32px;
-  text-align: center;
+  font-size: 2em;
   font-weight: bold;
+  margin-left: 10px;
+  color: white;
 }
 
 .red {
   color: rgb(255, 65, 65);
-}
-
-.col-md-6 .nav-btn {
-  text-align: center;
 }
 
 .dropdown {
@@ -137,15 +131,6 @@ body {
   height: 20px;
 }
 
-.search-col {
-  margin-top: 32px;
-}
-
-.search {
-  width: 100%;
-  position: relative
-}
-
 .searchTerm {
   float: left;
   width: 100%;
@@ -193,7 +178,7 @@ input[type="text"], textarea {
   color: white;
   justify-content: center;
   text-align: center;
-  font-size: 72px;
+  font-size: 4vw;
   font-weight: bold;
 }
 
@@ -237,17 +222,34 @@ input[type="text"], textarea {
   cursor: pointer;
 }
 
-.films {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  height: 300px;
-  width: 70%;
-  border: 1px solid grey;
-  border-radius: 2px;
-  margin-top: 5px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
+.white {
+  color: white;
+}
+
+.shop-text a:not([href]):not([tabindex]) {
+  color: white;
+}
+
+.shop-text a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.shop-text a:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.shop-text .previous {
+  background-color: #0D0D0D;
+  color: white;
+}
+
+.shop-text .next {
+  background-color: #0D0D0D;
+  color: white;
 }
 
 .films-filtre img, .films img {
@@ -268,13 +270,6 @@ figcaption {
   float: right;
 }
 
-.toggle-films {
-  display: none;
-}
-.toggle-series {
-  display: none;
-}
-
 .featured {
   height: 45px;
   width: 100%;
@@ -290,17 +285,6 @@ figcaption {
 .filtre {
   margin-left: 180px;
   height: 96px;
-}
-
-.films-filtre {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  height: auto;
-  width: 100%;
-  border-radius: 2px;
-  align-content: center;
-  flex-wrap: wrap;
 }
 
 .more {
@@ -351,7 +335,22 @@ figcaption {
 
 .films-bottom {
   height: 200px;
-  width: 170px;
+  width: 140px;
+}
+
+.shop-text {
+  background-color: #0D0D0D;
+}
+
+.shop-text p {
+  color: rgba(255, 65, 65, 1);
+  margin-left: 5px;
+}
+
+.shop-img {
+  width: 110px;
+  height: auto;
+  cursor: pointer;
 }
 
 footer {
@@ -528,4 +527,64 @@ a#cRetour.cInvisible {
 a#cRetour.cVisible {
   bottom: 20px;
   opacity: 1;
+}
+
+.fixeTwitter, .fixeFacebook, .fixeDribbble, .fixeGoogle {
+  position: fixed;
+  width: 180px;
+  height: 42px;
+  border-radius: 21px;
+  left: -140px;
+  top: 40%;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.fixeTwitter:hover, .fixeFacebook:hover, .fixeDribbble:hover, .fixeGoogle:hover {
+  left: -20px;
+}
+
+.fixeTwitter {
+  margin-top: -69px;
+  background-color: #00ACED;
+  z-index: 3
+}
+
+.fixeFacebook {
+  margin-top: -21px;
+  background-color: #3B5998;
+  z-index: 3
+}
+
+.fixeDribbble {
+  margin-top: 27px;
+  background-color: #EA4C89;
+  z-index: 3
+}
+
+.fixeGoogle {
+  margin-top: 75px;
+  background-color: #DD4B39;
+  z-index: 3
+}
+
+.fixeIcon {
+  float: right;
+  background-color: #ffffff;
+  margin-top: -3px;
+  margin-right: -7px;
+  width: 28px;
+  height: 28px;
+  /* padding: -5px; */
+  padding-top: 4px;
+  border-radius: 50%;
+}
+
+.faFixe, .faFixe a {
+  color: #000000;
 }

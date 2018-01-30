@@ -17,429 +17,243 @@
 
 <body> <a name="haut" id="haut"></a>
   <!-- HEADER Slider -->
-  <div class="container-fluid">
-    <div class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="logo col-md-4"> <span class="red">ALLEZ</span>CINE! </div>
-          <div class="col-md-6">
-            <div class="dropdown"> <button class="btn-sm nav-btn" type="button">
-                    HOME
-                  </button> <button class="btn-sm nav-btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    GENRE
-                  </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenu2"> <button class="dropdown-item" type="button">Action</button> <button class="dropdown-item" type="button">Comedy</button> <button class="dropdown-item" type="button">Western</button> <button type="button" class="dropdown-item">Fiction</button>                </div> <button class="btn-sm nav-btn" type="button">
-                    FILMS
-                  </button> <button class="btn-sm nav-btn" type="button">
-                    SERIES
-                  </button> <button class="btn-sm nav-btn" type="button">
-                    SHOP
-                  </button> <button class="btn-sm nav-btn" type="button">
-                    CONTACT
-                  </button> </div>
-          </div>
-          <div class="col-md-2 search-col">
-            <div class="container">
-              <form class="form">
-                <div class="input-group"> <input class="form-control" type="text" placeholder="Recherche" aria-label="Search" id="mysearch">
-                  <div class="input-group-addon search-btn"> <button class="searctitreh-btn" type="submit" id="search-btn"><i class="fa fa-search"></i></button> </div>
-                </div>
-              </form>
+  <header>
+    <div class="container-fluid overlay">
+      <div class="row no-gutters ontop align-items-center">
+        <div class="logo col justify-content-between"> <span class="red">ALLEZ</span>CINE! </div>
+        <div class="col d-flex flex-nowrap" id="collapseNavBar">
+          <a href="#haut"><button class="btn-sm nav-btn" type="button">HOME</button></a>
+          <button class="btn-sm nav-btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GENRE</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2"> <button class="dropdown-item" type="button">Action</button> <button class="dropdown-item" type="button">Comedy</button> <button class="dropdown-item" type="button">Western</button> <button type="button" class="dropdown-item">Fiction</button>            </div>
+          <a href="#goto-movies"><button class="btn-sm nav-btn" type="button">FILMS</button></a>
+          <a href="#goto-series"><button class="btn-sm nav-btn" type="button">SERIES</button></a>
+          <a href="#goto-shop"><button class="btn-sm nav-btn" type="button">SHOP</button></a>
+          <a href="#contact"><button class="btn-sm nav-btn" type="button">CONTACT</button></a>
+        </div>
+        <div class="col-lg-2 col-md-12 col-xs-12 col-sm-12">
+          <form class="form">
+            <div class="input-group"> <input class="form-control" type="text" placeholder="Recherche" aria-label="Search" id="mysearch">
+              <div class="input-group-addon search-btn"> <button class="searctitreh-btn" type="submit" id="search-btn"><i class="fa fa-search"></i></button> </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 no-pad-left-right title">
-            <p>LATEST <span class="red">ON</span>LINE <span class="red">MO</span>VIES</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 no-pad-left-right dropdown trailer"> <button id="trailer" data-modal-id="modal-video" class="btn-lg btn-trailer" type="button">
-                WATCH TRAILER
-              </button> </div>
+          </form>
         </div>
       </div>
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div id="headerCarousel" class="carousel-item active"> <img class="d-block img-fluid" src="assets/img/cine1.jpg" alt="First slide"> </div>
-        <div id="headerCarousel" class="carousel-item"> <img class="d-block img-fluid" src="assets/img/cine2.jpg" alt="Second slide"> </div>
-        <div id="headerCarousel" class="carousel-item"> <img class="d-block img-fluid" src="assets/img/cine3.jpg" alt="Third slide"> </div>
-        <div id="headerCarousel" class="carousel-item"> <img class="d-block img-fluid" src="assets/img/cine4.jpg" alt="Third slide"> </div>
-      </div>
-    </div>
-    <div class="col-md-12 no-pad-left-right header-bot">
-      <p class="fa fa-phone"> (+000) 009 455 4068</p> <button class="btn btn-login" type="button" name="button">LOGIN</button> <button class="btn btn-login" type="button" name="button">REGISTER</button> </div>
-    <div class="films">
-      <figure class="films-fig"> <img src="assets/img/aff-sm1.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig"> <img src="assets/img/aff-sm2.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig"> <img src="assets/img/aff-sm3.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig"> <img src="assets/img/aff-sm4.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-      <figure class="films-fig"> <img src="assets/img/aff-sm5.jpg" alt="" class="films-slide">
-        <figcaption>titre</figcaption>
-        <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-      </figure>
-    </div>
-    <!-- FEATURED MOVIES - TITRE -->
-    <div class="row">
-      <div class="col-md-12 featured">
-        <h1>FEATURED MOVIES</h1> </div>
-    </div>
-    <!-- FEATURED MOVIES - 3 BOUTONS -->
-    <div class="row">
-      <div class="col-md-3 filtre"> <button id="all-button" class="btn-sm nav-btn" type="button">
-            ALL
-          </button> <button id="action-button" class="btn-sm nav-btn" type="button">
-              ACTION
-            </button> <button id="police-button" class="btn-sm nav-btn" type="button">
-                POLICIERS
-              </button> </div>
-    </div>
-    <!-- FEATURED MOVIES - 3 BOUTONS -->
-    <div id="films">
-      <div class="row">
-        <div class="films-filtre">
-          <figure class="action-film" class="films-fig"> <img src="assets/img/aff-sm11.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">action</span></figcaption>
-          </figure>
-          <figure class="police-film" class="films-fig"> <img src="assets/img/aff-sm12.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">police</span></figcaption>
-          </figure>
-          <figure class="police-film" class="films-fig"> <img src="assets/img/aff-sm13.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">police</span></figcaption>
-          </figure>
-          <figure class="films-fig action-film"> <img src="assets/img/aff-sm14.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">action</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm2.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm16.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-        </div>
-
-        <div class="films-filtre">
-          <figure class="films-fig"> <img src="assets/img/aff-sm17.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm4.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm18.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm5.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
+      </nav>
+      <div class="row no-gutters">
+        <div class="col title d-none d-sm-block">
+          <p>LATEST <span class="red">ON</span>LINE <span class="red">MO</span>VIES</p>
         </div>
       </div>
-      <div class="row toggle-films">
-        <div class="films-filtre">
-          <figure class="action-film" class="films-fig"> <img src="assets/img/aff-sm11.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">action</span></figcaption>
-          </figure>
-          <figure class="police-film" class="films-fig"> <img src="assets/img/aff-sm12.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">police</span></figcaption>
-          </figure>
-          <figure class="police-film" class="films-fig"> <img src="assets/img/aff-sm13.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">police</span></figcaption>
-          </figure>
-          <figure class="films-fig action-film"> <img src="assets/img/aff-sm14.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">action</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm2.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm16.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-        </div>
-
-        <div class="films-filtre">
-          <figure class="films-fig"> <img src="assets/img/aff-sm17.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm4.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm18.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/aff-sm5.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12 no-pad-left-right d-flex justify-content-center">
-          <input id="plus-de-films" class="btn-sm nav-btn more" type="button" value="Plus de films"></input>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 no-pad-left-right featured">
-        <h1>FEATURES SERIES TV</h1> </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3 filtre"> <button class="btn-sm nav-btn" type="button">
-          ALL
-        </button> <button class="btn-sm nav-btn" type="button">
-            ACTION
-          </button> <button class="btn-sm nav-btn" type="button">
-              POLICIERS
+      <div class="row no-gutters d-none d-md-block">
+        <div class="col trailer"> <button id="trailer" data-modal-id="modal-video" class="btn-lg btn-trailer" type="button">
+              WATCH TRAILER
             </button> </div>
-    </div>
-    <div>
-      <div class="row" id="series">
-        <div class="films-filtre">
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-        </div>
-      </div>
-      <div class="row">
-        <div class="films-filtre">
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-        </div>
-      </div>
-      <div class="row toggle-series">
-        <div class="films-filtre">
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-          <figure class="films-fig"> <img src="assets/img/slide1.jpg" alt="" class="films-slide">
-            <figcaption>titre</figcaption>
-            <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-          </figure>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 no-pad-left-right d-flex justify-content-center">
-          <input id="plus-de-series" class="btn-sm nav-btn more" type="button" value="Plus de series"></input>
-        </div>
       </div>
     </div>
-    <!-- begin -->
-    <div class="row">
-      <div class="col-md-12 no-pad-left-right featured">
-        <h1>SHOP MOVIES</h1>
-      </div>
-    </div>
-    <div class="row">
-     <div class="col-md-8 d-flex justify-content-around">
-        <figure class="films-fig">
-          <img src="assets/img/slide1.jpg" alt="" class="films-bottom">
-          <figcaption>titre</figcaption>
-          <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-        </figure>
-        <figure class="films-fig">
-          <img src="assets/img/slide1.jpg" alt="" class="films-bottom">
-          <figcaption>titre</figcaption>
-          <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-        </figure>
-        <figure class="films-fig">
-          <img src="assets/img/slide1.jpg" alt="" class="films-bottom">
-          <figcaption>titre</figcaption>
-          <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-        </figure>
-        <figure class="films-fig">
-          <img src="assets/img/slide1.jpg" alt="" class="films-bottom">
-          <figcaption>titre</figcaption>
-          <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-8 d-flex justify-content-around">
-        <figure class="films-fig">
-          <img src="assets/img/slide1.jpg" alt="" class="films-bottom">
-          <figcaption>titre</figcaption>
-          <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-        </figure>
-        <figure class="films-fig">
-          <img src="assets/img/slide1.jpg" alt="" class="films-bottom">
-          <figcaption>titre</figcaption>
-          <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-        </figure>
-        <figure class="films-fig">
-          <img src="assets/img/slide1.jpg" alt="" class="films-bottom">
-          <figcaption>titre</figcaption>
-          <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-        </figure>
-        <figure class="films-fig">
-          <img src="assets/img/slide1.jpg" alt="" class="films-bottom">
-          <figcaption>titre</figcaption>
-          <figcaption><span class="left">date</span><span class="right">genre</span></figcaption>
-        </figure>
-       </div>
-     </div>
-
-    <!-- End -->
-    <footer>
-      <div class="container">
-        <!-- FOOT SUBSCRIBE TO US -->
-        <div class="flex1">
-          <div class="col100">
-            <p class="footSubscribe red">SUBSCRIBE TO US</p>
-            <form> <input class="form-subscribe" type="email" placeholder="Enter your email"> <button class="btn-lg btn-subscribe" type="submit">
-                SUBSCRIBE
-              </button> </form>
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col">
+          <div class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div id="headerCarousel" class="carousel-item"> <img class="d-block" src="assets/img/cine1.jpg" alt="First slide"> </div>
+              <div id="headerCarousel" class="carousel-item active"> <img class="d-block" src="assets/img/cine2.jpg" alt="Second slide"> </div>
+              <div id="headerCarousel" class="carousel-item"> <img class="d-block" src="assets/img/cine3.jpg " alt="Third slide"> </div>
+              <div id="headerCarousel" class="carousel-item"> <img class="d-block" src="assets/img/cine4.jpg" alt="Third slide"> </div>
+            </div>
           </div>
         </div>
-        <!-- FOOT 5 COLONNES -->
-        <div class="row">
-          <div class="flex1">
-            <div class="col20">
-              <p class="footTitre">Release</p>
-              <hr class="footLigne">
-              <p class="footTexte">2017<br>2016<br>2015<br>2014<br>2013<br>2012</p>
-            </div>
-            <div class="col20">
-              <p class="footTitre">Movies</p>
-              <hr class="footLigne">
-              <p class="footTexte">Aventure<br>Comedy<br>Fantasy<br>Action<br>Movies<br>Horror</p>
-            </div>
-            <div class="col20">
-              <p class="footTitre">Revieuw Movies</p>
-              <hr class="footLigne">
-              <p> <span class="footBadge">Comedy</span> <span class="footBadge">Horror</span> <span class="footBadge">Historical</span> <span class="footBadge">Romantic</span> <span class="footBadge">Love</span> <span class="footBadge">Action</span>
-                <span class="footBadge">Revieuws</span> <span class="footBadge">Comedy</span> <span class="footBadge">Horror</span> <span class="footBadge">Historical</span> <span class="footBadge">Romantic</span> <span class="footBadge">Love</span>
-                <span
-                  class="footBadge">Action</span> <span class="footBadge">Revieuws</span> <span class="footBadge">Comedy</span> <span class="footBadge">Horror</span> <span class="footBadge">Historical</span> <span class="footBadge">Romantic</span> <span class="footBadge">Love</span>                  <span class="footBadge">Action</span> <span class="footBadge">Revieuws</span> </p>
-            </div>
-            <div class="col20">
-              <p class="footTitre">Latest Movies</p>
-              <hr class="footLigne">
-              <p><img class="footLatestImg" src="assets/img/footLatest1.jpg" alt="Eveniet Ut Molesti"><span class="footLatest">Eveniet Ut Molesti</span></p>
-              <p><img class="footLatestImg" src="assets/img/footLatest2.jpg" alt="Eveniet Ut Molesti"><span class="footLatest">Earum Rerum Tenet</span></p>
-              <p><img class="footLatestImg" src="assets/img/footLatest3.jpg" alt="Eveniet Ut Molesti"><span class="footLatest">Eveniet Ut Molesti</span></p>
-              <p><img class="footLatestImg" src="assets/img/footLatest4.jpg" alt="Eveniet Ut Molesti"><span class="footLatest">Earum Rerum Tenet</span></p>
-            </div>
-            <div class="col20">
-              <p class="footTitre footLogo"><span class="red">ALLEZ</span>CINE!</p>
-              <hr class="footLigne"> <img class="footAllezImg" src="assets/img/aff-xs1.jpg" alt=""><img class="footAllezImg" src="assets/img/aff-xs2.jpg" alt=""><img class="footAllezImg" src="assets/img/aff-xs3.jpg" alt=""><br><img class="footAllezImg" src="assets/img/aff-xs4.jpg"
-                alt=""><img class="footAllezImg" src="assets/img/aff-xs5.jpg" alt=""><img class="footAllezImg" src="assets/img/aff-xs6.jpg" alt=""> </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col header-bot">
+          <p class="fa fa-phone"> (+000) 009 455 4068</p> <button class="btn btn-login" type="button" name="button">LOGIN</button> <button class="btn btn-login" type="button" name="button">REGISTER</button> </div>
+      </div>
+    </div>
+    <div class="row">
+      <a href="https://twitter.com" target="_blank">
+        <div class="col-lg-3 fixeTwitter">Twitter
+          <div class="fixeIcon"><i class="fa fa-twitter icone-fontawesome faFixe"></i></div>
+        </div>
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+        <div class="col-lg-3 fixeFacebook">Facebook
+          <div class="fixeIcon"><i class="fa fa-facebook icone-fontawesome faFixe"></i></div>
+        </div>
+      </a>
+      <a href="https://dribbble.com" target="_blank">
+        <div class="col-lg-3 fixeDribbble">Dribbble
+          <div class="fixeIcon"><i class="fa fa-dribbble icone-fontawesome faFixe"></i></div>
+        </div>
+      </a>
+      <a href="https://plus.google.com" target="_blank">
+        <div class="col-lg-3 fixeGoogle">Google+
+          <div class="fixeIcon"><i class="fa fa-google-plus icone-fontawesome faFixe"></i></div>
+        </div>
+      </a>
+    </div>
+  </header>
+  <div class="container-fluid d-flex justify-content-around p-2">
+    <div class="container d-flex justify-content-center p-1">
+      <div class="row" id="hof"></div>
+    </div>
+  </div>
+  <!-- FEATURED MOVIES -->
+  <div class="row no-gutters">
+    <div id="goto-movies" class="col-md-12 featured">
+      <h1>FEATURED MOVIES</h1> </div>
+  </div>
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-2">
+        <input id="movies-filter-All" class="btn-sm nav-btn" type="button" value="All"></input>
+      </div>
+      <div class="col-2">
+        <input id="movies-filter-Action" class="btn-sm nav-btn" type="button" value="Action"></input>
+      </div>
+      <div class="col-2">
+        <input id="movies-filter-Comedy" class="btn-sm nav-btn" type="button" value="Comedy"></input>
+      </div>
+      <div class="col-2">
+        <input id="movies-filter-Adventure" class="btn-sm nav-btn" type="button" value="Adventure"></input>
+      </div>
+      <div class="col-2">
+        <input id="movies-filter-Fiction" class="btn-sm nav-btn" type="button" value="Fiction"></input>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="container d-flex justify-content-start p-1">
+          <div class="row" id="movies"></div>
+        </div>
+        <div class="container d-flex justify-content-start p-1">
+          <div id="toggle-movies" class="invisible row"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-12 no-pad-left-right d-flex justify-content-center">
+      <input id="plus-de-films" class="btn-sm nav-btn more" type="button" value="Plus de films"></input>
+    </div>
+  </div>
+  <!-- FEATURED SERIES -->
+  <div class="row no-gutters">
+    <div id="goto-series" class="col-md-12 no-pad-left-right featured">
+      <h1>FEATURES SERIES TV</h1> </div>
+  </div>
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-2">
+        <input id="series-filter-All" class="btn-sm nav-btn" type="button" value="All"></input>
+      </div>
+      <div class="col-2">
+        <input id="series-filter-Action" class="btn-sm nav-btn" type="button" value="Action"></input>
+      </div>
+      <div class="col-2">
+        <input id="series-filter-Comedy" class="btn-sm nav-btn" type="button" value="Comedy"></input>
+      </div>
+      <div class="col-2">
+        <input id="series-filter-Adventure" class="btn-sm nav-btn" type="button" value="Adventure"></input>
+      </div>
+      <div class="col-2">
+        <input id="series-filter-Fiction" class="btn-sm nav-btn" type="button" value="Fiction"></input>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="container d-flex justify-content-start p-1">
+          <div class="row" id="Series"></div>
+        </div>
+        <div class="container d-flex justify-content-start p-1">
+          <div id="toggle-Series" class="invisible row"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-12 no-pad-left-right d-flex justify-content-center">
+      <input id="plus-de-Series" class="btn-sm nav-btn more" type="button" value="Plus de Series"></input>
+    </div>
+  </div>
+  <!-- begin -->
+  <div id="goto-shop" class="row no-gutters">
+    <div class="col-md-12 no-pad-left-right featured">
+      <h1>SHOP MOVIES</h1>
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-md-7 col-xs-12 justify-content-around">
+      <div class="row" id="shop-js"></div>
+    </div>
+    <div class="col-md-5 col-xs-12 shop-text">
+      <a id="next-js" class="next round right">&#8250;</a>
+      <a id="previous-js" class="previous round right">&#8249;</a>
+      <iframe frameBorder="" width="100%" height="325px" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+      <p id="title-js"></p>
+      <p id="story-js"></p>
+      <p id="release-js"></p>
+      <p id="genre-js"></p>
+      <p id="prix-js"></p>
+    </div>
+  </div>
+  <!-- End -->
+  <footer>
+    <div class="container">
+      <!-- FOOT SUBSCRIBE TO US -->
+      <div class="flex1">
+        <div class="col100">
+          <p class="footSubscribe red">SUBSCRIBE TO US</p>
+          <form>
+            <input class="form-subscribe" type="email" placeholder="Enter your email">
+            <button class="btn-lg btn-subscribe" type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+      <!-- FOOT 5 COLONNES -->
+      <div class="row no-gutters">
+        <div class="flex1">
+          <div class="col20">
+            <p class="footTitre">Release</p>
+            <hr class="footLigne">
+            <p class="footTexte">2017<br>2016<br>2015<br>2014<br>2013<br>2012</p>
+          </div>
+          <div class="col20">
+            <p class="footTitre">Movies</p>
+            <hr class="footLigne">
+            <p class="footTexte">Aventure<br>Comedy<br>Fantasy<br>Action<br>Movies<br>Horror</p>
+          </div>
+          <div class="col20">
+            <p class="footTitre">Revieuw Movies</p>
+            <hr class="footLigne">
+            <p> <span class="footBadge">Comedy</span> <span class="footBadge">Horror</span> <span class="footBadge">Historical</span> <span class="footBadge">Romantic</span> <span class="footBadge">Love</span> <span class="footBadge">Action</span>
+              <span class="footBadge">Revieuws</span> <span class="footBadge">Comedy</span> <span class="footBadge">Horror</span> <span class="footBadge">Historical</span> <span class="footBadge">Romantic</span> <span class="footBadge">Love</span>
+              <span class="footBadge">Action</span> <span class="footBadge">Revieuws</span> <span class="footBadge">Comedy</span> <span class="footBadge">Horror</span> <span class="footBadge">Historical</span> <span class="footBadge">Romantic</span>
+              <span class="footBadge">Love</span> <span class="footBadge">Action</span> <span class="footBadge">Revieuws</span> </p>
+          </div>
+          <div class="col20">
+            <p class="footTitre">Latest Movies</p>
+            <hr class="footLigne">
+            <p><img " class="footLatestImg " src="assets/img/footLatest1.jpg " alt="Eveniet Ut Molesti "><span class="footLatest ">Eveniet Ut Molesti</span></p>
+            <p><img " class="footLatestImg" src="assets/img/footLatest2.jpg" alt="Eveniet Ut Molesti"><span class="footLatest">Earum Rerum Tenet</span></p>
+            <p><img " class="footLatestImg " src="assets/img/footLatest3.jpg " alt="Eveniet Ut Molesti "><span class="footLatest ">Eveniet Ut Molesti</span></p>
+            <p><img " class="footLatestImg" src="assets/img/footLatest4.jpg" alt="Eveniet Ut Molesti"><span class="footLatest">Earum Rerum Tenet</span></p>
+          </div>
+          <div class="col20">
+            <p class="footTitre footLogo"><span class="red">ALLEZ</span>CINE!</p>
+            <hr class="footLigne">
           </div>
         </div>
       </div>
       <!-- CONNECT US -->
       <div class="container">
-        <!-- <div class="row"> -->
+        <!-- <div class="row no-gutters"> -->
         <div class="flex1">
           <div class="col100">
             <hr class="footLigne">
@@ -462,9 +276,8 @@
         </div>
         <!-- </div> -->
       </div>
-    </footer>
-    <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
-  </div>
+  </footer>
+  <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
   <!-- trailer modal -->
   <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
     <div class="modal-dialog" role="document">
@@ -486,6 +299,11 @@
   <!-- Optional JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/filmTable.js"></script>
+  <script type="text/javascript" src="assets/js/seriesTable.js"></script>
+  <script type="text/javascript" src="assets/js/hof.js"></script>
+  <script type="text/javascript" src="assets/js/footerImg.js"></script>
+  <script type="text/javascript" src="assets/js/shop.js"></script>
   <script type="text/javascript" src="assets/js/gotop.js"></script>
   <script type="text/javascript" src="assets/js/file.js"></script>
   <script type="text/javascript" src="assets/js/filter.js"></script>

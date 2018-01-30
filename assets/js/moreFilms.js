@@ -1,18 +1,12 @@
 $('#plus-de-films').click(function() {
-  for (i of $('.toggle-films')) {
-    if (i.style.display == "") {
-      i.style.display = "block"
-    } else {
-      i.style.display = ""
-      $('html, body').animate({
-        scrollTop: $("#films").offset().top
-      }, 200);
-    }
-  }
+  $('#toggle-movies').toggleClass("invisible")
   if (this.value == "Plus de films") {
     this.value = "Moins de films"
   } else {
     this.value = "Plus de films"
+    $('html, body').animate({
+      scrollTop: $("#movies").offset().top
+    }, 200);
   }
 
 })
