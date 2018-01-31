@@ -11,28 +11,17 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="assets/css/style-perso.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/jquery-eu-cookie-law-popup.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Kalam:400,700|Noticia+Text:400i,700i" rel="stylesheet"> -->
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-  <!-- <link rel="icon" type="image/png" href="images/favicon.png" /> -->
+
 </head>
 
 <body>
   <!-- Cookie Pop Up -->
-  <div class="eupopup eupopup-container econtainer-fluid fixed-bottom">
-    <div class="eupopup-markup">
-      <div class="eupopup-head">This website is using cookies</div>
-      <div class="eupopup-body">We use cookies to ensure that we give you the best experience on our website. If you continue using the site, we\'ll assume that you are happy to receive all cookies on this website.</div>
-      <div class="eupopup-buttons">
-        <a href="#" class="eupopup-button eupopup-button_1">Continue</a>
-        <a href="http://www.wimagguc.com/?cookie-policy" target="_blank" class="eupopup-button eupopup-button_2">Learn more</a>
-      </div>
-      <div class="clearfix"></div>
-      <a href="#" class="eupopup-closebutton">x</a>
-    </div>
-  </div>
+  <div class="eupopup eupopup-bottom eupopup-container fixed-bottom"></div>
   <!-- Cookie Pop Up / -->
   <a name="haut" id="haut"></a>
   <!-- HEADER Slider -->
+
   <header>
     <div class="container-fluid overlay">
       <div class="row no-gutters ontop align-items-center">
@@ -46,6 +35,7 @@
           <a href="#goto-shop"><button class="btn-sm nav-btn" type="button">SHOP</button></a>
           <a href="#contact"><button class="btn-sm nav-btn" type="button">CONTACT</button></a>
         </div>
+
         <div class="col-lg-2 col-md-12 col-xs-12 col-sm-12">
           <form class="form">
             <div class="input-group"> <input class="form-control" type="text" placeholder="Recherche" aria-label="Search" id="mysearch">
@@ -89,7 +79,10 @@
     <div class="container-fluid">
       <div class="row no-gutters">
         <div class="col header-bot">
-          <p class="fa fa-phone"> (+000) 009 455 4068</p> <button class="btn btn-login" type="button" name="button">LOGIN</button> <button class="btn btn-login" type="button" name="button">REGISTER</button> </div>
+          <p class="fa fa-phone"></p> <span class="white"> (+000) 009 455 4068 </span>
+          <button class="btn btn-login" type="button" name="button" data-toggle="modal" data-target="#login">LOGIN</button>
+          <button class="btn btn-login" type="button" name="button" data-toggle="modal" data-target="#register">REGISTER</button>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -123,7 +116,7 @@
   </div>
   <!-- FEATURED MOVIES -->
   <div class="row no-gutters">
-    <div id="goto-movies" class="col-md-12 featured">
+    <div id="goto-movies" class="col-md-12 featured p-1">
       <h1>FEATURED MOVIES</h1> </div>
   </div>
   <div class="container">
@@ -146,11 +139,8 @@
     </div>
     <div class="container">
       <div class="row no-gutters">
-        <div class="container d-flex justify-content-start p-1">
+        <div class="container p-1">
           <div class="row" id="movies"></div>
-        </div>
-        <div class="container d-flex justify-content-start p-1">
-          <div id="toggle-movies" class="invisible row"></div>
         </div>
       </div>
     </div>
@@ -185,21 +175,18 @@
     </div>
     <div class="container">
       <div class="row no-gutters">
-        <div class="container d-flex justify-content-start p-1">
+        <div class="container p-1">
           <div class="row" id="Series"></div>
-        </div>
-        <div class="container d-flex justify-content-start p-1">
-          <div id="toggle-Series" class="invisible row"></div>
         </div>
       </div>
     </div>
   </div>
   <div class="row no-gutters">
     <div class="col-12 no-pad-left-right d-flex justify-content-center">
-      <input id="plus-de-Series" class="btn-sm nav-btn more" type="button" value="Plus de Series"></input>
+      <input id="plus-de-Series" class="btn-sm nav-btn more" type="button" value="Plus de series"></input>
     </div>
   </div>
-  <!-- begin -->
+  <!-- Shop Movies -->
   <div id="goto-shop" class="row no-gutters">
     <div class="col-md-12 no-pad-left-right featured">
       <h1>SHOP MOVIES</h1>
@@ -220,6 +207,7 @@
       <p id="prix-js"></p>
     </div>
   </div>
+  <!-- Shop Movies / -->
   <!-- Formulaire de contact -->
   <form>
     <div class="container">
@@ -328,6 +316,85 @@
     </div>
   </div>
   <!-- trailer modal -->
+  <!-- Login modal -->
+  <div class="modal fade" id="login">
+    <div class="modal-dialog">
+      <div class="modal-content d-flex justify-content-center">
+
+        <!-- Modal Header -->
+        <div class="container p-3">
+
+          <div class="logo"> <span class="red">ALLEZCINE!</span> </div>
+        </div>
+
+        <!-- Modal body -->
+        <div class="container">
+          <div class="p-1">
+            <input class="form-subscribe" type="texte" name="password" placeholder="Username"> </input>
+          </div>
+          <div class="p-1">
+            <input class="form-subscribe" type="password" name="password" placeholder="Password"> </input>
+          </div>
+          <div class="">
+            <input type="checkbox" name="" value=""> Save session
+          </div>
+          <div class="p-1">
+            <input class="btn-sm nav-btn" type="button" name="" value="Login">
+            <input class="btn-sm nav-btn" type="button" name="" value="Register">
+          </div>
+          <a class="right" href="#">Forgot password</a>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn-sm nav-btn left" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- register modal  -->
+  <div class="modal fade" id="register">
+    <div class="modal-dialog">
+      <div class="modal-content d-flex justify-content-center">
+
+        <!-- Modal Header -->
+        <div class="container p-3">
+
+          <div class="logo"> <span class="red">ALLEZCINE!</span> </div>
+        </div>
+
+        <!-- Modal body -->
+        <div class="container">
+          <div class="p-1">
+            <input class="form-subscribe" type="texte" name="username" placeholder="Username"> </input>
+          </div>
+          <div class="p-1">
+            <input class="form-subscribe" type="email" name="email" placeholder="E-mail"> </input>
+          </div>
+          <div class="p-1">
+            <input class="form-subscribe" type="password" name="password" placeholder="Password"> </input>
+          </div>
+          <div class="p-1">
+            <input class="form-subscribe" type="password" name="password" placeholder="Confirm Password"> </input>
+          </div>
+          <div class="">
+            <input class="" type="checkbox" name="conditions">  J'accepte les conditions d'utilisations</input>
+          </div>
+          <div class="p-1">
+            <input class="btn-sm nav-btn" type="button" name="" value="Register">
+          </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn-sm nav-btn left" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- register modal / -->
   <!-- Content -->
   <!-- Footer  -->
   <!-- Optional JavaScript -->

@@ -61,14 +61,14 @@ for (var i = 0; i < aff.length; i++) {
             </div>`;
   y++
   if (y < 5) {
-    createhofToggle()
+    // createhofToggle()
     createhofRow()
     aff.splice(rnd, 1)
   }
 }
-$(document).ready(function(){
-        console.log("ok")
-        $("#hof").toggle("slide", {direction: "left"}, 2000);
-        $('#second-hof').toggle("slide", {direction: "right"}, 4000)
-});
-$('#second-hof').hide()
+// $(document).ready(function(){
+//         console.log("ok")
+//         $("#hof").toggle("slide", {direction: "left"}, 2000);
+//         $('#second-hof').toggle("slide", {direction: "right"}, 4000)
+// });
+// $('#second-hof').hide()

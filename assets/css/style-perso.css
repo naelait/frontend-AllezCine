@@ -592,7 +592,16 @@ a#cRetour.cVisible {
   color: #000000;
 }
 
-
+#login, #register {
+  text-align: center;
+  background-color: #f8f8ff;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 20%;
+  height: 400px;
+  opacity: 0.9;
+  border-radius: 20px;
+}
 
 
 /*Media Queries*/
@@ -606,5 +615,13 @@ a#cRetour.cVisible {
   .col20 {
     width: 100%;
     padding: 10px;
+  }
+  #login, #register {
+    text-align: center;
+    background-color: #f8f8ff;
+    width: 100%;
+    height: 400px;
+    opacity: 0.9;
+    border-radius: 20px;
   }
 }

@@ -1,9 +1,10 @@
 $('#plus-de-Series').click(function() {
-  $('#toggle-Series').toggleClass("invisible")
-  if (this.value == "Plus de Series") {
-    this.value = "Moins de Series"
+  if (this.value == "Plus de series") {
+    $('.toggleSerie-js').show()
+    this.value = "Moins de series"
   } else {
-    this.value = "Plus de Series"
+    $('.toggleSerie-js').hide()
+    this.value = "Plus de series"
     $('html, body').animate({
       scrollTop: $("#Series").offset().top
     }, 200);

@@ -44,7 +44,7 @@ function createSeriesRow() {
     rnd = Math.floor(Math.random() * 12) + 1
   }
   writeSeries = `${writeSeries}
-              <div class="col ${aff[rnd][3]}-Series">
+              <div class="col-2 ${aff[rnd][3]}-Series">
               <div class="text-center">
                 <img  src="${aff[rnd][1]}" alt="">
               </div>
@@ -53,7 +53,7 @@ function createSeriesRow() {
                 ${aff[rnd][2]},   ${aff[rnd][3]}
               </div>
             </div>`;
-  document.getElementById("Series").innerHTML = writeSeries
+  // document.getElementById("Series").innerHTML = writeSeries
   aff.splice(rnd, 1)
 }
 
@@ -63,7 +63,7 @@ function createToggleSeriesRow(){
     rnd = Math.floor(Math.random() * 34) + 1
   }
   writeToggleSeries = `${writeToggleSeries}
-              <div class="col ${aff[rnd][3]}-Series">
+              <div class="toggleSerie-js collapse col-2 ${aff[rnd][3]}-Series">
               <div class="text-center">
                 <img  src="${aff[rnd][1]}" alt="">
               </div>
@@ -72,7 +72,7 @@ function createToggleSeriesRow(){
                 ${aff[rnd][2]},   ${aff[rnd][3]}
               </div>
             </div>`;
-  document.getElementById("toggle-Series").innerHTML = writeToggleSeries
+  // document.getElementById("Series").innerHTML = writeToggleSeries
   aff.splice(rnd, 1)
 }
 
@@ -80,3 +80,5 @@ for (var i=0;i<12;i++){
   createSeriesRow()
   createToggleSeriesRow()
 }
+featuredSeries = writeSeries + writeToggleSeries
+$("#Series").html(featuredSeries)

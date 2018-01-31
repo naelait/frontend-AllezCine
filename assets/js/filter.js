@@ -1,72 +1,78 @@
 $("#movies-filter-All").click( function(){
-  $(".Action-Movies").removeClass("invisible")
-  $(".Adventure-Movies").removeClass("invisible")
-  $(".Fiction-Movies").removeClass("invisible")
-  $(".Comedy-Movies").removeClass("invisible")
+  $('#plus-de-films').show()
+  $('#plus-de-films').attr('value', "Moins de films")
+  $(".Action-Movies").show()
+  $(".Adventure-Movies").show()
+  $(".Fiction-Movies").show()
+  $(".Comedy-Movies").show()
 }
 )
 
 $("#movies-filter-Comedy").click( function(){
-  $(".Action-Movies").addClass("invisible")
-  $(".Adventure-Movies").addClass("invisible")
-  $(".Fiction-Movies").addClass("invisible")
-  $(".Comedy-Movies").removeClass("invisible")
+  $('#plus-de-films').hide()
+  $(".Action-Movies").hide()
+  $(".Adventure-Movies").hide()
+  $(".Fiction-Movies").hide()
+  $(".Comedy-Movies").show()
 })
 
 $("#movies-filter-Adventure").click( function(){
-  $(".Action-Movies").addClass("invisible")
-  $(".Fiction-Movies").addClass("invisible")
-  $(".Comedy-Movies").addClass("invisible")
-  $(".Adventure-Movies").removeClass("invisible")
+  $('#plus-de-films').hide()
+  $(".Action-Movies").hide()
+  $(".Fiction-Movies").hide()
+  $(".Comedy-Movies").hide()
+  $(".Adventure-Movies").show()
 })
 
 $("#movies-filter-Action").click( function(){
-  $(".Action-Movies").removeClass("invisible")
-  $(".Fiction-Movies").addClass("invisible")
-  $(".Comedy-Movies").addClass("invisible")
-  $(".Adventure-Movies").addClass("invisible")
+  $('#plus-de-films').hide()
+  $(".Action-Movies").show()
+  $(".Fiction-Movies").hide()
+  $(".Comedy-Movies").hide()
+  $(".Adventure-Movies").hide()
 })
 
 $("#movies-filter-Fiction").click( function(){
-  $(".Action-Movies").addClass("invisible")
-  $(".Fiction-Movies").removeClass("invisible")
-  $(".Comedy-Movies").addClass("invisible")
-  $(".Adventure-Movies").addClass("invisible")
+  $('#plus-de-films').hide()
+  $(".Action-Movies").hide()
+  $(".Fiction-Movies").show()
+  $(".Comedy-Movies").hide()
+  $(".Adventure-Movies").hide()
 })
 
 
 $("#series-filter-All").click( function(){
-  $(".Action-Series").removeClass("invisible")
-  $(".Adventure-Series").removeClass("invisible")
-  $(".Fiction-Series").removeClass("invisible")
-  $(".Comedy-Series").removeClass("invisible")
+  $(".Action-Series").show()
+  $(".Adventure-Series").show()
+  $(".Fiction-Series").show()
+  $(".Comedy-Series").show()
 }
 )
 
 $("#series-filter-Comedy").click( function(){
-  $(".Action-Series").addClass("invisible")
-  $(".Adventure-Series").addClass("invisible")
-  $(".Fiction-Series").addClass("invisible")
-  $(".Comedy-Series").removeClass("invisible")
+  $(".Action-Series").hide()
+  $(".Adventure-Series").hide()
+  $(".Fiction-Series").hide()
+  $(".Comedy-Series").show()
 })
 
 $("#series-filter-Adventure").click( function(){
-  $(".Action-Series").addClass("invisible")
-  $(".Fiction-Series").addClass("invisible")
-  $(".Comedy-Series").addClass("invisible")
-  $(".Adventure-Series").removeClass("invisible")
+  $(".Action-Series").hide()
+  $(".Fiction-Series").hide()
+  $(".Comedy-Series").hide()
+  $(".Adventure-Series").show()
 })
 
 $("#series-filter-Action").click( function(){
-  $(".Action-Series").removeClass("invisible")
-  $(".Fiction-Series").addClass("invisible")
-  $(".Comedy-Series").addClass("invisible")
-  $(".Adventure-Series").addClass("invisible")
+  $(".Action-Series").show()
+  $(".Fiction-Series").hide()
+  $(".Comedy-Series").hide()
+  $(".Adventure-Series").hide()
 })
 
 $("#series-filter-Fiction").click( function(){
-  $(".Action-Series").addClass("invisible")
-  $(".Fiction-Series").removeClass("invisible")
-  $(".Comedy-Series").addClass("invisible")
-  $(".Adventure-Series").addClass("invisible")
+  $(".Action-Series").hide()
+  $(".Fiction-Series").show()
+  $(".Comedy-Series").hide()
+  $(".Adventure-Series").hide()
 })
