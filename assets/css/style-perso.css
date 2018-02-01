@@ -1,15 +1,14 @@
-.container-fluid {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.row.no-gutters>[class^="col-"], .row.no-gutters>[class*=" col-"] {
+.row, .container {
   padding-right: 0;
   padding-left: 0;
+  width: 100vw;
 }
 
-body {
-  background-color: #d7d3ce;
+body, html, .eupopup-container, .container-fluid{
+  background-color: blue;
+  width:100vw;
+  padding-left: 0px;
+  padding-right: 0px
 }
 a.nav-link {
   color:rgb(255, 65, 65)!important;
@@ -65,6 +64,9 @@ div.col20 img {
 @media (max-width: 768px) {
   nav.navbar {
     background: black;
+    position: fixed;
+    width:100vw;
+    font-size: 14px;
   }
 }
 

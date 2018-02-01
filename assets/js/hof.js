@@ -50,7 +50,7 @@ for (var i = 0; i < aff.length; i++) {
     rnd = Math.floor(Math.random() * 5) + 1
   }
   writehof = `${writehof}
-              <div class="col ${aff[rnd][3]}">
+              <div class="col-6 ${aff[rnd][3]}">
               <div class="text-center">
                 <img  id="hof" src="${aff[rnd][1]}" alt="">
               </div>
