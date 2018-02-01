@@ -7,8 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="assets/css/style-perso.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/jquery-eu-cookie-law-popup.css">
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
@@ -24,29 +23,56 @@
 
   <header>
     <div class="container-fluid overlay">
-      <div class="row no-gutters ontop align-items-center">
-        <div class="logo col justify-content-between"> <span class="red">ALLEZ</span>CINE! </div>
-        <div class="col d-flex flex-nowrap" id="collapseNavBar">
-          <a href="#haut"><button class="btn-sm nav-btn" type="button">HOME</button></a>
-          <button class="btn-sm nav-btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GENRE</button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2"> <button class="dropdown-item" type="button">Action</button> <button class="dropdown-item" type="button">Comedy</button> <button class="dropdown-item" type="button">Western</button> <button type="button" class="dropdown-item">Fiction</button>            </div>
-          <a href="#goto-movies"><button class="btn-sm nav-btn" type="button">FILMS</button></a>
-          <a href="#goto-series"><button class="btn-sm nav-btn" type="button">SERIES</button></a>
-          <a href="#goto-shop"><button class="btn-sm nav-btn" type="button">SHOP</button></a>
-          <a href="#contact"><button class="btn-sm nav-btn" type="button">CONTACT</button></a>
-        </div>
+      <nav class="navbar navbar-expand-md navbar-light">
 
-        <div class="col-lg-2 col-md-12 col-xs-12 col-sm-12">
-          <form class="form">
-            <div class="input-group"> <input class="form-control" type="text" placeholder="Recherche" aria-label="Search" id="mysearch">
-              <div class="input-group-addon search-btn"> <button class="searctitreh-btn" type="submit" id="search-btn"><i class="fa fa-search"></i></button> </div>
-            </div>
-          </form>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="col">
+          <a class="logo navbar-brand" href="#"><span class="red">ALLEZ</span><span class="white">CINE!</span></a>
         </div>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div class="col">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Films</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Series</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Genre
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Comedy</a>
+                  <a class="dropdown-item" href="#">Adventure</a>
+                  <a class="dropdown-item" href="#">Fiction</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="navbar-search" type="text" name="" value="" placeholder="Search" >
+            </form>
+          </div>
+        </div>
       </nav>
-      <div class="row no-gutters">
-        <div class="col title d-none d-sm-block">
+
+      <div class="row no-gutters d-none d-md-block">
+        <div class="col title">
           <p>LATEST <span class="red">ON</span>LINE <span class="red">MO</span>VIES</p>
         </div>
       </div>
@@ -60,12 +86,6 @@
       <div class="row no-gutters">
         <div class="col">
           <div class="carousel slide carousel-fade" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
             <div class="carousel-inner" role="listbox">
               <div id="headerCarousel" class="carousel-item"> <img class="d-block" src="assets/img/cine1.jpg" alt="First slide"> </div>
               <div id="headerCarousel" class="carousel-item active"> <img class="d-block" src="assets/img/cine2.jpg" alt="Second slide"> </div>
@@ -85,7 +105,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row d-none d-md-block">
       <a href="https://twitter.com" target="_blank">
         <div class="col-lg-3 fixeTwitter">Twitter
           <div class="fixeIcon"><i class="fa fa-twitter icone-fontawesome faFixe"></i></div>
@@ -121,6 +141,9 @@
   </div>
   <div class="container">
     <div class="row no-gutters">
+      <div class="navbar">
+
+      </div>
       <div class="col-2">
         <input id="movies-filter-All" class="btn-sm nav-btn" type="button" value="All"></input>
       </div>
@@ -183,7 +206,7 @@
   </div>
   <div class="row no-gutters">
     <div class="col-12 no-pad-left-right d-flex justify-content-center">
-      <input id="plus-de-Series" class="btn-sm nav-btn more" type="button" value="Plus de series"></input>
+      <input id="plus-de-series" class="btn-sm nav-btn more" type="button" value="Plus de series"></input>
     </div>
   </div>
   <!-- Shop Movies -->
@@ -379,7 +402,7 @@
             <input class="form-subscribe" type="password" name="password" placeholder="Confirm Password"> </input>
           </div>
           <div class="">
-            <input class="" type="checkbox" name="conditions">  J'accepte les conditions d'utilisations</input>
+            <input class="" type="checkbox" name="conditions"> J'accepte les conditions d'utilisations</input>
           </div>
           <div class="p-1">
             <input class="btn-sm nav-btn" type="button" name="" value="Register">
@@ -398,7 +421,9 @@
   <!-- Content -->
   <!-- Footer  -->
   <!-- Optional JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
   <script src="assets/js/filmTable.js"></script>
@@ -414,7 +439,6 @@
   <script src="assets/js/moreFilms.js"></script>
   <script src="assets/js/moreSeries.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 
 </html>

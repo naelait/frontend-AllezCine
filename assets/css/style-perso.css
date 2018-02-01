@@ -11,6 +11,13 @@
 body {
   background-color: #d7d3ce;
 }
+a.nav-link {
+  color:rgb(255, 65, 65)!important;
+}
+a.nav-link:hover {
+  background-color: rgb(255, 65, 65);
+  color: white!important;
+}
 
 #headerCarousel {
   max-height: 480px;
@@ -44,23 +51,31 @@ div.col20 img {
 .logo {
   font-size: 2em;
   font-weight: bold;
-  margin-left: 10px;
   color: white;
+}
+.navbar-search {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(255, 65, 65);
+}
+
+.navbar-light span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='red' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 768px) {
+  nav.navbar {
+    background: black;
+  }
 }
 
 .red {
   color: rgb(255, 65, 65);
 }
 
-.dropdown {
-  margin-top: 32px;
-  text-align: left;
+.btn-secondary, .nav-btn {
+  background-color: rgba(255, 49, 60, 0);
+  border: none;
 }
-
-.dropdown .nav-btn:last-child {
-  margin-left: 60px;
-}
-
 .nav-btn {
   margin-top: 4px;
   color: rgba(255, 65, 65, 1);
@@ -74,11 +89,6 @@ div.col20 img {
   font-size: 12px;
   font-weight: bold;
   width: 70px;
-}
-
-.btn-secondary, .nav-btn {
-  background-color: rgba(255, 49, 60, 0);
-  border: none;
 }
 
 .nav-btn:hover {
@@ -104,22 +114,6 @@ div.col20 img {
   padding: 10px 1px;
 }
 
-.dropdown-item {
-  padding: 0px;
-  margin-top: 0px;
-  margin-left: 5px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.dropdown-menu.show {
-  padding-right: 10px;
-  border-radius: 0px;
-  min-width: 118px;
-  line-height: 18px;
-  padding-bottom: 23px;
-}
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 body {
   background: #f2f2f2;
@@ -130,40 +124,6 @@ body {
   width: 36px;
   height: 20px;
 }
-
-.searchTerm {
-  float: left;
-  width: 100%;
-  border: 3px solid #00B4CC;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px;
-  outline: none;
-  color: white;
-}
-
-.searchTerm:focus, .searchTerm:focus {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.btn-warning {
-  background-color: rgba(0, 0, 0, 0.3);
-  border: none;
-}
-
-input[type="text"], textarea {
-  background-color: rgba(0, 0, 0, 0.3);
-  border: none;
-}
-
-.search-btn {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  border-color: rgba(0, 0, 0, 0.8);
-}
-
-/*Resize the wrap to see the search bar change!*/
 
 .wrap {
   width: 30%;

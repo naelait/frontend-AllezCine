@@ -44,7 +44,7 @@ function createSeriesRow() {
     rnd = Math.floor(Math.random() * 12) + 1
   }
   writeSeries = `${writeSeries}
-              <div class="col-2 ${aff[rnd][3]}-Series">
+              <div class="col-md-2 col-xs-6 ${aff[rnd][3]}-Series">
               <div class="text-center">
                 <img  src="${aff[rnd][1]}" alt="">
               </div>
@@ -63,7 +63,7 @@ function createToggleSeriesRow(){
     rnd = Math.floor(Math.random() * 34) + 1
   }
   writeToggleSeries = `${writeToggleSeries}
-              <div class="toggleSerie-js collapse col-2 ${aff[rnd][3]}-Series">
+              <div class="toggleSerie-js collapse col-md-2 col-xs-6 ${aff[rnd][3]}-Series">
               <div class="text-center">
                 <img  src="${aff[rnd][1]}" alt="">
               </div>

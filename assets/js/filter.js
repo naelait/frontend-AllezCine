@@ -42,6 +42,8 @@ $("#movies-filter-Fiction").click( function(){
 
 
 $("#series-filter-All").click( function(){
+  $('#plus-de-series').show()
+  $('#plus-de-series').attr('value', "Moins de series")
   $(".Action-Series").show()
   $(".Adventure-Series").show()
   $(".Fiction-Series").show()
