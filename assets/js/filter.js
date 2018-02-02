@@ -52,6 +52,7 @@ $("#series-filter-All").click( function(){
 )
 
 $("#series-filter-Comedy").click( function(){
+  $('#plus-de-series').hide()
   $(".Action-Series").hide()
   $(".Adventure-Series").hide()
   $(".Fiction-Series").hide()
@@ -59,6 +60,7 @@ $("#series-filter-Comedy").click( function(){
 })
 
 $("#series-filter-Adventure").click( function(){
+  $('#plus-de-series').hide()
   $(".Action-Series").hide()
   $(".Fiction-Series").hide()
   $(".Comedy-Series").hide()
@@ -66,6 +68,7 @@ $("#series-filter-Adventure").click( function(){
 })
 
 $("#series-filter-Action").click( function(){
+  $('#plus-de-series').hide()
   $(".Action-Series").show()
   $(".Fiction-Series").hide()
   $(".Comedy-Series").hide()
@@ -73,6 +76,7 @@ $("#series-filter-Action").click( function(){
 })
 
 $("#series-filter-Fiction").click( function(){
+  $('#plus-de-series').hide()
   $(".Action-Series").hide()
   $(".Fiction-Series").show()
   $(".Comedy-Series").hide()

@@ -44,7 +44,7 @@ function createmoviesRow() {
     rnd = Math.floor(Math.random() * 12) + 1
   }
   writemovies = `${writemovies}
-              <div class="col-md-2 col-xs-6 ${aff[rnd][3]}-Movies">
+              <div class="col col-md-2 ${aff[rnd][3]}-Movies">
               <div class="text-center">
                 <img  src="${aff[rnd][1]}" alt="">
               </div>
@@ -53,7 +53,6 @@ function createmoviesRow() {
                 ${aff[rnd][2]},   ${aff[rnd][3]}
               </div>
             </div>`;
-  // document.getElementById("movies").innerHTML = writemovies
   aff.splice(rnd, 1)
 }
 
@@ -63,7 +62,7 @@ function createToggleMoviesRow(){
     rnd = Math.floor(Math.random() * 34) + 1
   }
   writeToggleMovies = `${writeToggleMovies}
-              <div class="toggleFilm-js collapse col-lg-2 col-md-2 col-xs-6 ${aff[rnd][3]}-Movies">
+              <div class="toggleFilm-js collapse col col-md-2 ${aff[rnd][3]}-Movies">
               <div class="text-center">
                 <img  src="${aff[rnd][1]}" alt="">
               </div>
@@ -72,7 +71,6 @@ function createToggleMoviesRow(){
                 ${aff[rnd][2]},   ${aff[rnd][3]}
               </div>
             </div>`;
-  // document.getElementById("movies").innerHTML = writeToggleMovies
   aff.splice(rnd, 1)
 }
 
