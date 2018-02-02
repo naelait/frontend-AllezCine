@@ -1,15 +1,11 @@
-.row, .col, .container {
-  padding-right: 0;
-  padding-left: 0;
+*{
+  outline:green solid 1px;
 }
-body, html,  .container-fluid, .no-pad{
+.container-fluid {
   padding-left: 0px;
   padding-right: 0px;
-  clear:both
 }
-iframe {
-  width: 100%
-}
+
 a.nav-link {
   color:rgb(255, 65, 65)!important;
 }
@@ -25,7 +21,10 @@ a.nav-link:hover {
 div.col20 img {
   width: calc(100%/3);
 }
-
+.shop {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 #headerCarousel img {
   filter: brightness(0.5);
   object-fit: cover;
@@ -69,7 +68,7 @@ div.col20 img {
     position: fixed!important;
     background: black;
     padding: 0px;
-    width:100vw;
+    width: 100%;
     font-size: 14px;
   }
   .logo {
@@ -98,6 +97,23 @@ div.col20 img {
   font-size: 12px;
   font-weight: bold;
   width: 70px;
+}
+.contact-btn {
+  margin-top: 4px;
+  color: rgba(255, 65, 65, 1);
+  font-size: 7px;
+  font-weight: bold;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 100px;
+}
+.contact {
+  width: 100%
 }
 
 .nav-btn:hover {
@@ -248,6 +264,7 @@ figcaption {
   color: black;
   font-size: 26px;
   margin-left: 60px;
+  display: inline;
   border-left: rgba(255, 65, 65, 1) solid 2px;
 }
 
@@ -515,6 +532,7 @@ a#cRetour.cVisible {
 }
 
 .fixeTwitter:hover, .fixeFacebook:hover, .fixeDribbble:hover, .fixeGoogle:hover {
+  transition: left 0.5s;
   left: -20px;
 }
 

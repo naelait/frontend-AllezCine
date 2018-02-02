@@ -23,9 +23,9 @@ var temp = [];
 
 function createshopRow() {
   temp.push(rnd)
-  writeshop = `${writeshop}<div class="col-md-3 col">
+  writeshop = `${writeshop}<div class="col-3">
     <div class="text-center">
-      <img id="${aff[rnd][6]}" class="shop-img shop-item" src="${aff[rnd][1]}">
+      <img id="${aff[rnd][6]}" class="shop-img img-fluid shop-item" src="${aff[rnd][1]}">
     </div>
     <div class="caption text-center">
       ${aff[rnd][0]}</br>
