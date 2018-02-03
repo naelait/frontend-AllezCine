@@ -274,6 +274,9 @@ figcaption {
 }
 
 .featured h1 {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: black;
   font-size: 26px;
   margin-left: 100px;
