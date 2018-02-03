@@ -2,8 +2,8 @@
   e.ageCheck = function(r) {
     const t = e.extend({
         minAge: 18,
-        redirectTo: "http://www.imdb.com/",
-        redirectOnFail: "",
+        redirectTo: "",
+        redirectOnFail: "http://www.imdb.com/",
         title: "Age Verification",
         copy: "This Website requires you to be [18] years or older to enter. Please enter your Date of Birth in the fields below in order to continue:",
         successMsg: {
