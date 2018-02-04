@@ -628,4 +628,7 @@ a#cRetour.cVisible {
   .btn-subscribe {
     margin-top: 20px;
   }
+  .header-bot {
+    margin-top: 50px;
+  }
 }
