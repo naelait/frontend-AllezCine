@@ -44,7 +44,7 @@ function createmoviesRow() {
     rnd = Math.floor(Math.random() * 12) + 1
   }
   writemovies = `${writemovies}
-              <div class="col col-md-2 ${aff[rnd][3]}-Movies">
+              <div class="col-6 col-md-2 ${aff[rnd][3]}-Movies">
               <div class="text-center">
                 <img  src="${aff[rnd][1]}" alt="">
               </div>
@@ -62,7 +62,7 @@ function createToggleMoviesRow(){
     rnd = Math.floor(Math.random() * 34) + 1
   }
   writeToggleMovies = `${writeToggleMovies}
-              <div class="toggleFilm-js collapse col col-md-2 ${aff[rnd][3]}-Movies">
+              <div class="toggleFilm-js collapse col-6 col-md-2 ${aff[rnd][3]}-Movies">
               <div class="text-center">
                 <img  src="${aff[rnd][1]}" alt="">
               </div>

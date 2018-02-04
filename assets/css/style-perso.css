@@ -68,19 +68,6 @@ div.col20 img {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='red' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-@media (max-width: 768px) {
-  nav.navbar {
-    position: fixed !important;
-    background: black;
-    padding: 0px;
-    width: 100%;
-    font-size: 14px;
-  }
-  .logo {
-    float: right
-  }
-}
-
 .red {
   color: rgb(255, 65, 65);
 }
@@ -610,6 +597,16 @@ a#cRetour.cVisible {
 /*Media Queries*/
 
 @media (max-width: 768px) {
+  nav.navbar {
+    position: fixed !important;
+    background: black;
+    padding: 0px;
+    width: 100%;
+    font-size: 14px;
+  }
+  .logo {
+    float: right
+  }
   .flex1 {
     flex-wrap: wrap;
   }
@@ -625,4 +622,6 @@ a#cRetour.cVisible {
     opacity: 0.9;
     border-radius: 20px;
   }
+  .featured h1 {
+    margin-left: 5px;
 }
