@@ -48,7 +48,6 @@ for (var i = 0; i < 8; i++) {
 
 
 $('#next-js').click(function() {
-  console.log("ok")
   temp = []
   i = 0
   writeshop = ""
@@ -64,7 +63,6 @@ $('#next-js').click(function() {
   showInfos()
 })
 $('#previous-js').click(function() {
-  console.log("ok")
   temp = []
   i = 0
   writeshop = ""
@@ -85,7 +83,6 @@ function showInfos() {
     e = e || window.event;
     e = e.target || e.srcElement;
     id = e.id
-    console.log(id)
     $('#title-js').html(`Titre: <span class="white">${aff[id][0]}</span>`)
     $('#story-js').html(`Story line: <span class="white">${aff[id][5]}</span>`)
     $('#release-js').html(`Année de Sortie: <span class="white">${aff[id][2]}</span>`)

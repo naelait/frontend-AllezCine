@@ -624,4 +624,8 @@ a#cRetour.cVisible {
   }
   .featured h1 {
     margin-left: 5px;
+  }
+  .btn-subscribe {
+    margin-top: 20px;
+  }
 }
