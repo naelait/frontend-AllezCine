@@ -646,7 +646,7 @@ a#cRetour.cVisible {
     margin-top: 50px;
   }
   #modal-film {
-    height: min-content;
+    height: 100%;
     background-color: black;
     width: 100%;
   }
