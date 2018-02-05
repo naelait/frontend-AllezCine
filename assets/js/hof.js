@@ -43,7 +43,7 @@ function createHofRow() {
                 </div>`;
 }
 
-for (var i = 0; i < 6; i++) {
+for (var i = 0; i < 5; i++) {
   if (temp.includes(rnd) == true) {
     rnd = Math.floor(Math.random() * 24) + 0
     i--

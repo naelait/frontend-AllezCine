@@ -494,7 +494,7 @@ a#cRetour {
   position: fixed;
   right: 20px;
   opacity: 1;
-  z-index: 99999;
+  z-index: 999;
   transition: all ease-in 0.2s;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -582,12 +582,15 @@ a#cRetour.cVisible {
 #login, #register {
   padding-right: 15px;
   background-color: white;
-  width: 60%;
-  height: 70%;
+  width: 30%;
+  height: min-content;
   margin: 0 auto;
 }
+.watchInfos{
+  cursor: pointer;
+}
 #modal-film {
-  height: 80%;
+  height: min-content;
   padding-right: 15px;
   background-color: black;
   width: 75%;
@@ -613,6 +616,7 @@ a#cRetour.cVisible {
     background: black;
     padding: 0px;
     width: 100%;
+    height: min-content;
     font-size: 14px;
   }
   .logo {
@@ -627,10 +631,9 @@ a#cRetour.cVisible {
   }
   #login, #register {
     padding-right: 15px;
-    display: block;
     background-color: white;
-    width: 75%;
-    height: auto;
+    width: min-content;
+    height: min-content;
     margin: 0 auto;
   }
   .featured h1 {
@@ -641,5 +644,14 @@ a#cRetour.cVisible {
   }
   .header-bot {
     margin-top: 50px;
+  }
+  #modal-film {
+    height: min-content;
+    background-color: black;
+    width: 100%;
+  }
+  #modal-film .modal-footer {
+    display: flex;
+    justify-content: flex-start;
   }
 }
