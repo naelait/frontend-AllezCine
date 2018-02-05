@@ -59,19 +59,19 @@ $('.film-item').click(function(e) {
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">${aff[filmId][0]}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
       <div class="row no-gutters">
-      <div class="col-md-6 col-12">
+      <div class="col-12">
         <p> <span class="red">Genre : </span> ${aff[filmId][3]} </p>
         <p> <span class="red">Date de sortie : </span> ${aff[filmId][2]} </p>
         <p> <span class="red">Synopsis : </span> ${aff[filmId][5]}
       </div>
-        <div class="col-md-6 col-12">
+        <div class="col-12">
           <iframe width="100%" height="325px" src="${aff[filmId][4]}"> </iframe>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn nav-btn" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>`)
