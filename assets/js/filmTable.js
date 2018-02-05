@@ -1,82 +1,78 @@
-var aff = [
-  ["Wonder Woman", "assets/img/aff-sm1.jpg", "2017", "Action"],
-  ["Mr Gaga", "assets/img/aff-sm2.jpg", "2015", "Comedy"],
-  ["In The Fade", "assets/img/aff-sm3.jpg", "2014", "Adventure"],
-  ["X-Men", "assets/img/aff-sm4.jpg", "2015", "Fiction"],
-  ["Paddington 2", "assets/img/aff-sm5.jpg", "2013", "Comedy"],
-  ["Safari", "assets/img/aff-sm6.jpg", "2016", "Comedy"],
-  ["The Hobbit", "assets/img/aff-sm7.jpg", "2017", "Fiction"],
-  ["Pirates Of Caraïbes", "assets/img/aff-sm8.jpg", "2012", "Action"],
-  ["Star Wars", "assets/img/aff-sm9.jpg", "2017", "Fiction"],
-  ["Avatar", "assets/img/aff-sm10.jpg", "2014", "Fiction"],
-  ["King Kong", "assets/img/aff-sm11.jpg", "2012", "Fiction"],
-  ["La Croisée.", "assets/img/aff-sm12.jpg", "2014", "Adventure"],
-  ["Tintin", "assets/img/aff-sm13.jpg", "2013", "Adventure"],
-  ["Titanic", "assets/img/aff-sm14.jpg", "2006", "Adventure"],
-  ["Les Ch’Tis", "assets/img/aff-sm15.jpg", "2009", "Comedy"],
-  ["Top Bifle", "assets/img/aff-sm16.jpg", "2006", "Adventure"],
-  ["Labyrinthe", "assets/img/aff-sm17.jpg", "2016", "Fiction"],
-  ["Seul sur Mars", "assets/img/aff-sm18.jpg", "2015", "Fiction"],
-  ["Tomb Raider", "assets/img/aff-sm19.jpg", "2012", "Action"],
-  ["Avengers", "assets/img/aff-sm20.jpg", "2014", "Fiction"],
-  ["Underworld", "assets/img/aff-sm21.jpg", "2012", "Fiction"],
-  ["24 Hours Live", "assets/img/aff-sm22.jpg", "2017", "Action"],
-  ["Twilight", "assets/img/aff-sm23.jpg", "2015", "Comedy"],
-  ["Life", "assets/img/aff-sm24.jpg", "2017", "Fiction"],
-  ["Captain America", "assets/img/aff-sm25.jpg", "2014", "Fiction"],
-  ["Scary Movie", "assets/img/aff-sm26.jpg", "2008", "Comedy"],
-  ["Le crime de l’Orient Express", "assets/img/aff-sm27.jpg", "2007", "Adventure"],
-  ["Les Tuche", "assets/img/aff-sm28.jpg", "2014", "Comedy"],
-  ["Terminator", "assets/img/aff-sm29.jpg", "2001", "Fiction"],
-  ["La Belle et la Bête", "assets/img/aff-sm30.jpg", "2016", "Comedy"],
-  ["Very Bad Trip", "assets/img/aff-sm31.jpg", "2015", "Comedy"],
-  ["Gladiator", "assets/img/aff-sm32.jpg", "2014", "Adventure"],
-  ["Matrix", "assets/img/aff-sm33.jpg", "2007", "Fiction"],
-  ["Iron Man 2", "assets/img/aff-sm34.jpg", "2012", "Fiction"],
-  ["Seuls", "assets/img/aff-sm35.jpg", "2011", "Comedy"]
-];
-var writemovies = ""
-var writeToggleMovies = ""
+var writemovies = "";
+var writeToggleMovies = "";
+var rnd = Math.floor(Math.random() * 24) + 0
+var temp = [];
 
 function createmoviesRow() {
-  var rnd = Math.floor(Math.random() * 12) + 1
-  while (aff[rnd] == null) {
-    rnd = Math.floor(Math.random() * 12) + 1
-  }
+  temp.push(rnd);
   writemovies = `${writemovies}
               <div class="col-6 col-md-2 ${aff[rnd][3]}-Movies">
               <div class="text-center">
-                <img  src="${aff[rnd][1]}" alt="">
+                <a data-toggle="modal" data-target="#modal-film"> <img class="film-item" id="${aff[rnd][6]}" src="${aff[rnd][1]}"></a>
               </div>
               <div class="caption text-center">
                 ${aff[rnd][0]}</br>
                 ${aff[rnd][2]},   ${aff[rnd][3]}
               </div>
             </div>`;
-  aff.splice(rnd, 1)
 }
 
-function createToggleMoviesRow(){
-  var rnd = Math.floor(Math.random() * 34) + 1
-  while (aff[rnd] == null) {
-    rnd = Math.floor(Math.random() * 34) + 1
-  }
+function createToggleMoviesRow() {
+  temp.push(rnd)
   writeToggleMovies = `${writeToggleMovies}
               <div class="toggleFilm-js collapse col-6 col-md-2 ${aff[rnd][3]}-Movies">
               <div class="text-center">
-                <img  src="${aff[rnd][1]}" alt="">
+                <a data-toggle="modal" data-target="#modal-film"> <img class="film-item" id="${aff[rnd][6]}" src="${aff[rnd][1]}"></a>
               </div>
               <div class="caption text-center">
                 ${aff[rnd][0]}</br>
                 ${aff[rnd][2]},   ${aff[rnd][3]}
               </div>
             </div>`;
-  aff.splice(rnd, 1)
+
 }
 
-for (var i=0;i<12;i++){
-  createmoviesRow()
-  createToggleMoviesRow()
+for (var i = 0; i < 12; i++) {
+  if (temp.includes(rnd) == true) {
+    rnd = Math.floor(Math.random() * 24) + 0
+    i--
+  } else {
+    createmoviesRow()
+  }
+}
+for (var i = 0; i < 12; i++) {
+  if (temp.includes(rnd) == true) {
+    rnd = Math.floor(Math.random() * 24) + 0
+    i--
+  } else {
+    createToggleMoviesRow()
+  }
 }
 featuredMovies = writemovies + writeToggleMovies
 $("#movies").html(featuredMovies)
+
+$('.film-item').click(function(e) {
+  e = e || window.event;
+  e = e.target || e.srcElement;
+  filmId = e.id
+  $('#modal-film').html(`<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">${aff[filmId][0]}</h5>
+      </div>
+      <div class="row no-gutters">
+      <div class="col-5">
+        <p> <span class="red">Genre : </span> ${aff[filmId][3]} </p>
+        <p> <span class="red">Date de sortie : </span> ${aff[filmId][2]} </p>
+        <p> <span class="red">Synopsis : </span> ${aff[filmId][5]}
+      </div>
+        <div class="offset-1 col-6">
+          <iframe frameBorder="" width="100%" height="325px" src="${aff[filmId][4]}"> </iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn nav-btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>`)
+})

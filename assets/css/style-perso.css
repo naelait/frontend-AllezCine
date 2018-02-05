@@ -580,14 +580,25 @@ a#cRetour.cVisible {
 }
 
 #login, #register {
-  text-align: center;
-  background-color: #f8f8ff;
-  width: 40%;
+  padding-right: 15px;
+  background-color: white;
+  width: 60%;
+  height: 70%;
   margin: 0 auto;
-  margin-bottom: 20%;
-  height: 400px;
-  opacity: 0.9;
-  border-radius: 20px;
+}
+#modal-film {
+  height: 80%;
+  padding-right: 15px;
+  background-color: black;
+  width: 75%;
+  margin: 0 auto;
+}
+#modal-film p {
+  color: white;
+}
+#modal-film h5 {
+  text-decoration: underline;
+  color: white
 }
 
 .eupopup-container-bottom {
@@ -615,12 +626,12 @@ a#cRetour.cVisible {
     padding: 10px;
   }
   #login, #register {
-    text-align: center;
-    background-color: #f8f8ff;
-    width: 100%;
-    height: 400px;
-    opacity: 0.9;
-    border-radius: 20px;
+    padding-right: 15px;
+    display: block;
+    background-color: white;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
   }
   .featured h1 {
     margin-left: 5px;
