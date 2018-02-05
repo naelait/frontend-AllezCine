@@ -37,6 +37,13 @@ for (var i = 0; i < 12; i++) {
     i--
   } else {
     createSeriesRow()
+  }
+}
+for (var i = 0; i < 12; i++) {
+  if (temp.includes(rnd) == true) {
+    rnd = Math.floor(Math.random() * 24) + 0
+    i--
+  } else {
     createToggleSeriesRow()
   }
 }
