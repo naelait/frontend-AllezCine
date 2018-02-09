@@ -6,7 +6,7 @@ function createshopRow() {
   temp.push(rnd)
   writeshop = `${writeshop}<div class="col-3">
     <div class="text-center">
-      <img id="${aff[rnd][6]}" class="shop-img img-fluid shop-item" src="${aff[rnd][1]}" alt="${aff[rnd][0]}>
+      <img id="${aff[rnd][6]}" class="shop-img img-fluid shop-item" src="${aff[rnd][1]}" alt="${aff[rnd][0]}">
     </div>
     <div class="caption text-center">
       ${aff[rnd][0]}</br>

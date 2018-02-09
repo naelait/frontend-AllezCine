@@ -8,7 +8,7 @@ function createSeriesRow() {
   writeSeries = `${writeSeries}
               <div class="col-6 col-md-2 ${aff[rnd][3]}-Series">
               <div class="text-center">
-                <img  src="${aff[rnd][1]}" alt="${aff[rnd][0]}>
+                <img  src="${aff[rnd][1]}" alt="${aff[rnd][0]}">
               </div>
               <div class="caption text-center">
                 ${aff[rnd][0]}</br>
@@ -22,7 +22,7 @@ function createToggleSeriesRow(){
   writeToggleSeries = `${writeToggleSeries}
               <div class="toggleSerie-js collapse col-6 col-md-2 ${aff[rnd][3]}-Series">
               <div class="text-center">
-                <img  src="${aff[rnd][1]}" alt="${aff[rnd][0]}>
+                <img  src="${aff[rnd][1]}" alt="${aff[rnd][0]}">
               </div>
               <div class="caption text-center">
                 ${aff[rnd][0]}</br>
