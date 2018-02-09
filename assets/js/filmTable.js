@@ -8,7 +8,7 @@ function createmoviesRow() {
   writemovies = `${writemovies}
               <div class="watchInfos col-6 col-md-2 ${aff[rnd][3]}-Movies">
               <div class="text-center">
-                <a data-toggle="modal" data-target="#modal-film"> <img class="film-item" id="${aff[rnd][6]}" src="${aff[rnd][1]}"></a>
+                <a data-toggle="modal" data-target="#modal-film"> <img class="film-item" id="${aff[rnd][6]}" src="${aff[rnd][1]}" alt="${aff[rnd][0]}"></a>
               </div>
               <div class="caption text-center">
                 ${aff[rnd][0]}</br>
@@ -22,7 +22,7 @@ function createToggleMoviesRow() {
   writeToggleMovies = `${writeToggleMovies}
               <div class="watchInfos toggleFilm-js collapse col-6 col-md-2 ${aff[rnd][3]}-Movies">
               <div class="text-center">
-                <a href="#modal-film" data-toggle="modal" > <img class="film-item" id="${aff[rnd][6]}" src="${aff[rnd][1]}"></a>
+                <a href="#modal-film" data-toggle="modal" > <img class="film-item" id="${aff[rnd][6]}" src="${aff[rnd][1]}" alt="${aff[rnd][0]}></a>
               </div>
               <div class="caption text-center">
                 ${aff[rnd][0]}</br>
