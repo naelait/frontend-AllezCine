@@ -1,0 +1,22 @@
+{
+  "name": "frontend-allezcine",
+  "version": "1.0.0",
+  "description": "**Naiel & Jean Luc**, Junior Web Developer by BeCode",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naelait/frontend-AllezCine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naelait/frontend-AllezCine/issues"
+  },
+  "homepage": "https://github.com/naelait/frontend-AllezCine#readme",
+  "devDependencies": {
+    "workbox-sw": "^3.0.0"
+  }
+}
